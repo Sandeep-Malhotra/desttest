@@ -1,0 +1,11 @@
+applications:
+- name: desttest
+  host: desttest
+  path: appfolder
+  command: node app.js
+  memory: 64M
+  random-route: true
+  buildpack: nodejs_buildpack
+  services:
+    - desttest_uaa
+  

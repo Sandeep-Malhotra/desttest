@@ -1,0 +1,20 @@
+{
+  "name": "desttest",
+  "version": "1.0.0",
+  "description": "This app calls Backend service API",
+  "main": "app.js",
+  "engines": {
+    "node": "12.X"
+},
+  "scripts": {
+    "start": "node --inspect app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cfenv": "^1.2.3",
+    "client-oauth2": "^4.2.4",
+    "express": "^4.17.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}

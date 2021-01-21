@@ -1,0 +1,1006 @@
+Retrieving logs for app desttest in org Ricegrowers_Limited_rgdev / space rg-dev-space as sandeep@bournedigital.com.au...
+
+   2021-01-21T18:23:09.53+1100 [API/2] OUT Updated app with guid 0a18877c-e26f-41eb-999b-496570dc1112 ({"state"=>"STARTED"})
+   2021-01-21T18:23:09.57+1100 [STG/0] OUT Downloading nodejs_buildpack...
+   2021-01-21T18:23:09.64+1100 [STG/0] OUT Downloaded nodejs_buildpack
+   2021-01-21T18:23:09.64+1100 [STG/0] OUT Cell c9caf51d-447d-4a76-8cd9-48c01b5dc548 creating container for instance 741651b2-37e7-4f42-9bbd-1eaa14e333b1
+   2021-01-21T18:23:10.30+1100 [STG/0] OUT Cell c9caf51d-447d-4a76-8cd9-48c01b5dc548 successfully created container for instance 741651b2-37e7-4f42-9bbd-1eaa14e333b1
+   2021-01-21T18:23:10.46+1100 [STG/0] OUT Downloading app package...
+   2021-01-21T18:23:10.46+1100 [STG/0] OUT Downloading build artifacts cache...
+   2021-01-21T18:23:10.52+1100 [STG/0] OUT Downloaded build artifacts cache (223B)
+   2021-01-21T18:23:10.96+1100 [STG/0] OUT Downloaded app package (2.8M)
+   2021-01-21T18:23:11.23+1100 [STG/0] OUT -----> Nodejs Buildpack version 1.7.26
+   2021-01-21T18:23:11.35+1100 [STG/0] OUT -----> Installing binaries
+   2021-01-21T18:23:11.35+1100 [STG/0] OUT        engines.node (package.json): unspecified
+   2021-01-21T18:23:11.35+1100 [STG/0] OUT        engines.npm (package.json): unspecified (use default)
+   2021-01-21T18:23:11.35+1100 [STG/0] OUT        [31;1m**WARNING**[0m Node version not specified in package.json or .nvmrc. See: http://docs.cloudfoundry.org/buildpacks/node/node-tips.html
+   2021-01-21T18:23:11.35+1100 [STG/0] OUT -----> Installing node 10.22.0
+   2021-01-21T18:23:11.35+1100 [STG/0] OUT        Copy [/tmp/buildpacks/2f7ef33ef33b902acb498c1b50a44780/dependencies/e51d3df8fc7149ddd7abb5a679730d69/node_10.22.0_linux_x64_cflinuxfs3_43616969.tgz]
+   2021-01-21T18:23:12.81+1100 [STG/0] OUT        Using default npm version: 6.14.6
+   2021-01-21T18:23:12.81+1100 [STG/0] OUT -----> Installing yarn 1.22.4
+   2021-01-21T18:23:12.81+1100 [STG/0] OUT        Copy [/tmp/buildpacks/2f7ef33ef33b902acb498c1b50a44780/dependencies/d9f0c5147bcb9ee798f041978c157822/yarn-1.22.4-any-stack-24ca2294.tgz]
+   2021-01-21T18:23:13.29+1100 [STG/0] OUT        Installed yarn 1.22.4
+   2021-01-21T18:23:13.29+1100 [STG/0] OUT -----> Creating runtime environment
+   2021-01-21T18:23:13.29+1100 [STG/0] OUT        [34;1mPRO TIP:[0m Warning: package-lock.json not found. The buildpack may reach out to the internet to download module updates, even if they are vendored.
+   2021-01-21T18:23:13.29+1100 [STG/0] OUT        Visit https://docs.cloudfoundry.org/buildpacks/node/index.html#offline_environments
+   2021-01-21T18:23:13.29+1100 [STG/0] OUT        NODE_ENV=production
+   2021-01-21T18:23:13.29+1100 [STG/0] OUT        NODE_HOME=/tmp/contents727583955/deps/0/node
+   2021-01-21T18:23:13.29+1100 [STG/0] OUT        NODE_MODULES_CACHE=true
+   2021-01-21T18:23:13.29+1100 [STG/0] OUT        NODE_VERBOSE=false
+   2021-01-21T18:23:13.29+1100 [STG/0] OUT        NPM_CONFIG_LOGLEVEL=error
+   2021-01-21T18:23:13.29+1100 [STG/0] OUT        NPM_CONFIG_PRODUCTION=true
+   2021-01-21T18:23:13.29+1100 [STG/0] OUT -----> Building dependencies
+   2021-01-21T18:23:13.29+1100 [STG/0] OUT        Prebuild detected (node_modules already exists)
+   2021-01-21T18:23:13.29+1100 [STG/0] OUT        Rebuilding any native modules
+   2021-01-21T18:23:13.41+1100 [APP/PROC/WEB/0] OUT Exit status 143
+   2021-01-21T18:23:13.52+1100 [CELL/0] OUT Cell fb586cc3-8006-48b7-8a0b-c36cd1ef4e49 destroying container for instance 1f372511-d600-4b18-6c07-625d
+   2021-01-21T18:23:13.71+1100 [PROXY/0] OUT Exit status 137
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT client-oauth2@4.3.3 /tmp/app/node_modules/client-oauth2
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT popsicle@12.1.0 /tmp/app/node_modules/popsicle
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT popsicle-content-encoding@1.0.0 /tmp/app/node_modules/popsicle-content-encoding
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT popsicle-cookie-jar@1.0.0 /tmp/app/node_modules/popsicle-cookie-jar
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT @types/tough-cookie@2.3.7 /tmp/app/node_modules/@types/tough-cookie
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT tough-cookie@3.0.1 /tmp/app/node_modules/tough-cookie
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT ip-regex@2.1.0 /tmp/app/node_modules/ip-regex
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT psl@1.8.0 /tmp/app/node_modules/psl
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT punycode@2.1.1 /tmp/app/node_modules/punycode
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT popsicle-redirects@1.1.0 /tmp/app/node_modules/popsicle-redirects
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT popsicle-transport-http@1.1.1 /tmp/app/node_modules/popsicle-transport-http
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT cacheable-lookup@5.0.4 /tmp/app/node_modules/cacheable-lookup
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT make-error-cause@2.3.0 /tmp/app/node_modules/make-error-cause
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT make-error@1.3.6 /tmp/app/node_modules/make-error
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT popsicle-transport-xhr@2.0.0 /tmp/app/node_modules/popsicle-transport-xhr
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT popsicle-user-agent@1.0.0 /tmp/app/node_modules/popsicle-user-agent
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT servie@4.3.3 /tmp/app/node_modules/servie
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT @servie/events@1.0.0 /tmp/app/node_modules/@servie/events
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT byte-length@1.0.2 /tmp/app/node_modules/byte-length
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT ts-expect@1.1.0 /tmp/app/node_modules/ts-expect
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT throwback@4.1.0 /tmp/app/node_modules/throwback
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT safe-buffer@5.2.1 /tmp/app/node_modules/safe-buffer
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT express@4.17.1 /tmp/app/node_modules/express
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT accepts@1.3.7 /tmp/app/node_modules/accepts
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT mime-types@2.1.28 /tmp/app/node_modules/mime-types
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT mime-db@1.45.0 /tmp/app/node_modules/mime-db
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT negotiator@0.6.2 /tmp/app/node_modules/negotiator
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT array-flatten@1.1.1 /tmp/app/node_modules/array-flatten
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT body-parser@1.19.0 /tmp/app/node_modules/body-parser
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT bytes@3.1.0 /tmp/app/node_modules/bytes
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT content-type@1.0.4 /tmp/app/node_modules/content-type
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT debug@2.6.9 /tmp/app/node_modules/debug
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT ms@2.0.0 /tmp/app/node_modules/ms
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT depd@1.1.2 /tmp/app/node_modules/depd
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT http-errors@1.7.2 /tmp/app/node_modules/http-errors
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT inherits@2.0.3 /tmp/app/node_modules/inherits
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT setprototypeof@1.1.1 /tmp/app/node_modules/setprototypeof
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT statuses@1.5.0 /tmp/app/node_modules/statuses
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT toidentifier@1.0.0 /tmp/app/node_modules/toidentifier
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT iconv-lite@0.4.24 /tmp/app/node_modules/iconv-lite
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT safer-buffer@2.1.2 /tmp/app/node_modules/safer-buffer
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT on-finished@2.3.0 /tmp/app/node_modules/on-finished
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT ee-first@1.1.1 /tmp/app/node_modules/ee-first
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT qs@6.7.0 /tmp/app/node_modules/qs
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT raw-body@2.4.0 /tmp/app/node_modules/raw-body
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT unpipe@1.0.0 /tmp/app/node_modules/unpipe
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT type-is@1.6.18 /tmp/app/node_modules/type-is
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT media-typer@0.3.0 /tmp/app/node_modules/media-typer
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT content-disposition@0.5.3 /tmp/app/node_modules/content-disposition
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT safe-buffer@5.1.2 /tmp/app/node_modules/content-disposition/node_modules/safe-buffer
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT cookie@0.4.0 /tmp/app/node_modules/cookie
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT cookie-signature@1.0.6 /tmp/app/node_modules/cookie-signature
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT encodeurl@1.0.2 /tmp/app/node_modules/encodeurl
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT escape-html@1.0.3 /tmp/app/node_modules/escape-html
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT etag@1.8.1 /tmp/app/node_modules/etag
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT finalhandler@1.1.2 /tmp/app/node_modules/finalhandler
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT parseurl@1.3.3 /tmp/app/node_modules/parseurl
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT fresh@0.5.2 /tmp/app/node_modules/fresh
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT merge-descriptors@1.0.1 /tmp/app/node_modules/merge-descriptors
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT methods@1.1.2 /tmp/app/node_modules/methods
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT path-to-regexp@0.1.7 /tmp/app/node_modules/path-to-regexp
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT proxy-addr@2.0.6 /tmp/app/node_modules/proxy-addr
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT forwarded@0.1.2 /tmp/app/node_modules/forwarded
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT ipaddr.js@1.9.1 /tmp/app/node_modules/ipaddr.js
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT range-parser@1.2.1 /tmp/app/node_modules/range-parser
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT safe-buffer@5.1.2 /tmp/app/node_modules/express/node_modules/safe-buffer
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT send@0.17.1 /tmp/app/node_modules/send
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT destroy@1.0.4 /tmp/app/node_modules/destroy
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT mime@1.6.0 /tmp/app/node_modules/mime
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT ms@2.1.1 /tmp/app/node_modules/send/node_modules/ms
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT serve-static@1.14.1 /tmp/app/node_modules/serve-static
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT utils-merge@1.0.1 /tmp/app/node_modules/utils-merge
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT vary@1.1.2 /tmp/app/node_modules/vary
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT request@2.88.2 /tmp/app/node_modules/request
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT aws-sign2@0.7.0 /tmp/app/node_modules/aws-sign2
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT aws4@1.11.0 /tmp/app/node_modules/aws4
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT caseless@0.12.0 /tmp/app/node_modules/caseless
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT combined-stream@1.0.8 /tmp/app/node_modules/combined-stream
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT delayed-stream@1.0.0 /tmp/app/node_modules/delayed-stream
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT extend@3.0.2 /tmp/app/node_modules/extend
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT forever-agent@0.6.1 /tmp/app/node_modules/forever-agent
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT form-data@2.3.3 /tmp/app/node_modules/form-data
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT asynckit@0.4.0 /tmp/app/node_modules/asynckit
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT har-validator@5.1.5 /tmp/app/node_modules/har-validator
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT ajv@6.12.6 /tmp/app/node_modules/ajv
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT fast-deep-equal@3.1.3 /tmp/app/node_modules/fast-deep-equal
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT fast-json-stable-stringify@2.1.0 /tmp/app/node_modules/fast-json-stable-stringify
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT json-schema-traverse@0.4.1 /tmp/app/node_modules/json-schema-traverse
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT uri-js@4.4.1 /tmp/app/node_modules/uri-js
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT har-schema@2.0.0 /tmp/app/node_modules/har-schema
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT http-signature@1.2.0 /tmp/app/node_modules/http-signature
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT assert-plus@1.0.0 /tmp/app/node_modules/assert-plus
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT jsprim@1.4.1 /tmp/app/node_modules/jsprim
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT extsprintf@1.3.0 /tmp/app/node_modules/extsprintf
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT json-schema@0.2.3 /tmp/app/node_modules/json-schema
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT verror@1.10.0 /tmp/app/node_modules/verror
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT core-util-is@1.0.2 /tmp/app/node_modules/core-util-is
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT sshpk@1.16.1 /tmp/app/node_modules/sshpk
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT asn1@0.2.4 /tmp/app/node_modules/asn1
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT bcrypt-pbkdf@1.0.2 /tmp/app/node_modules/bcrypt-pbkdf
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT tweetnacl@0.14.5 /tmp/app/node_modules/tweetnacl
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT dashdash@1.14.1 /tmp/app/node_modules/dashdash
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT ecc-jsbn@0.1.2 /tmp/app/node_modules/ecc-jsbn
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT jsbn@0.1.1 /tmp/app/node_modules/jsbn
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT getpass@0.1.7 /tmp/app/node_modules/getpass
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT is-typedarray@1.0.0 /tmp/app/node_modules/is-typedarray
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT isstream@0.1.2 /tmp/app/node_modules/isstream
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT json-stringify-safe@5.0.1 /tmp/app/node_modules/json-stringify-safe
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT oauth-sign@0.9.0 /tmp/app/node_modules/oauth-sign
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT performance-now@2.1.0 /tmp/app/node_modules/performance-now
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT qs@6.5.2 /tmp/app/node_modules/request/node_modules/qs
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT tough-cookie@2.5.0 /tmp/app/node_modules/request/node_modules/tough-cookie
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT tunnel-agent@0.6.0 /tmp/app/node_modules/tunnel-agent
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT uuid@3.4.0 /tmp/app/node_modules/uuid
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT request-promise@4.2.6 /tmp/app/node_modules/request-promise
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT bluebird@3.7.2 /tmp/app/node_modules/bluebird
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT request-promise-core@1.1.4 /tmp/app/node_modules/request-promise-core
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT lodash@4.17.20 /tmp/app/node_modules/lodash
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT stealthy-require@1.1.1 /tmp/app/node_modules/stealthy-require
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT tough-cookie@2.5.0 /tmp/app/node_modules/request-promise/node_modules/tough-cookie
+   2021-01-21T18:23:14.21+1100 [STG/0] OUT        Installing any new modules (package.json)
+   2021-01-21T18:23:14.26+1100 [CELL/0] OUT Cell fb586cc3-8006-48b7-8a0b-c36cd1ef4e49 successfully destroyed container for instance 1f372511-d600-4b18-6c07-625d
+   2021-01-21T18:23:15.40+1100 [STG/0] OUT up to date in 0.636s
+   2021-01-21T18:23:15.45+1100 [STG/0] OUT 2 packages are looking for funding
+   2021-01-21T18:23:15.45+1100 [STG/0] OUT   run `npm fund` for details
+   2021-01-21T18:23:16.46+1100 [STG/0] OUT        Contrast Security no credentials found. Will not write environment files.
+   2021-01-21T18:23:21.00+1100 [STG/0] OUT Exit status 0
+   2021-01-21T18:23:21.00+1100 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2021-01-21T18:23:21.00+1100 [STG/0] OUT Uploading droplet...
+   2021-01-21T18:23:21.00+1100 [STG/0] OUT Uploading build artifacts cache...
+   2021-01-21T18:23:21.17+1100 [STG/0] OUT Uploaded build artifacts cache (224B)
+   2021-01-21T18:23:21.53+1100 [API/5] OUT Creating droplet for app with guid 0a18877c-e26f-41eb-999b-496570dc1112
+   2021-01-21T18:23:22.63+1100 [STG/0] OUT Uploaded droplet (24.4M)
+   2021-01-21T18:23:22.64+1100 [STG/0] OUT Uploading complete
+   2021-01-21T18:23:23.04+1100 [STG/0] OUT Cell c9caf51d-447d-4a76-8cd9-48c01b5dc548 stopping instance 741651b2-37e7-4f42-9bbd-1eaa14e333b1
+   2021-01-21T18:23:23.04+1100 [STG/0] OUT Cell c9caf51d-447d-4a76-8cd9-48c01b5dc548 destroying container for instance 741651b2-37e7-4f42-9bbd-1eaa14e333b1
+   2021-01-21T18:23:23.51+1100 [CELL/0] OUT Cell b33b8326-56a2-4d2a-b8a9-703fb2250e24 creating container for instance b043f727-a92c-4a92-4fb9-02ce
+   2021-01-21T18:23:23.74+1100 [STG/0] OUT Cell c9caf51d-447d-4a76-8cd9-48c01b5dc548 successfully destroyed container for instance 741651b2-37e7-4f42-9bbd-1eaa14e333b1
+   2021-01-21T18:23:24.20+1100 [CELL/0] OUT Cell b33b8326-56a2-4d2a-b8a9-703fb2250e24 successfully created container for instance b043f727-a92c-4a92-4fb9-02ce
+   2021-01-21T18:23:24.55+1100 [CELL/0] OUT Downloading droplet...
+   2021-01-21T18:23:26.29+1100 [CELL/0] OUT Downloaded droplet (24.4M)
+   2021-01-21T18:23:26.29+1100 [CELL/0] OUT Starting health monitoring of container
+   2021-01-21T18:23:27.13+1100 [APP/PROC/WEB/0] ERR internal/modules/cjs/loader.js:638
+   2021-01-21T18:23:27.13+1100 [APP/PROC/WEB/0] ERR     throw err;
+   2021-01-21T18:23:27.13+1100 [APP/PROC/WEB/0] ERR     ^
+   2021-01-21T18:23:27.13+1100 [APP/PROC/WEB/0] ERR Error: Cannot find module 'cfenv'
+   2021-01-21T18:23:27.13+1100 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+   2021-01-21T18:23:27.13+1100 [APP/PROC/WEB/0] ERR     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+   2021-01-21T18:23:27.13+1100 [APP/PROC/WEB/0] ERR     at Module.require (internal/modules/cjs/loader.js:692:17)
+   2021-01-21T18:23:27.13+1100 [APP/PROC/WEB/0] ERR     at require (internal/modules/cjs/helpers.js:25:18)
+   2021-01-21T18:23:27.13+1100 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:9:15)
+   2021-01-21T18:23:27.13+1100 [APP/PROC/WEB/0] ERR     at Module._compile (internal/modules/cjs/loader.js:778:30)
+   2021-01-21T18:23:27.13+1100 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+   2021-01-21T18:23:27.13+1100 [APP/PROC/WEB/0] ERR     at Module.load (internal/modules/cjs/loader.js:653:32)
+   2021-01-21T18:23:27.13+1100 [APP/PROC/WEB/0] ERR     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+   2021-01-21T18:23:27.13+1100 [APP/PROC/WEB/0] ERR     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+   2021-01-21T18:23:27.13+1100 [APP/PROC/WEB/0] ERR     at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+   2021-01-21T18:23:27.13+1100 [APP/PROC/WEB/0] ERR     at startup (internal/bootstrap/node.js:283:19)
+   2021-01-21T18:23:27.13+1100 [APP/PROC/WEB/0] ERR     at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+   2021-01-21T18:23:27.16+1100 [APP/PROC/WEB/0] OUT Exit status 1
+   2021-01-21T18:23:32.93+1100 [API/0] OUT Process has crashed with type: "web"
+   2021-01-21T18:23:32.94+1100 [CELL/0] OUT Cell b33b8326-56a2-4d2a-b8a9-703fb2250e24 stopping instance b043f727-a92c-4a92-4fb9-02ce
+   2021-01-21T18:23:32.94+1100 [CELL/0] OUT Cell b33b8326-56a2-4d2a-b8a9-703fb2250e24 destroying container for instance b043f727-a92c-4a92-4fb9-02ce
+   2021-01-21T18:23:32.95+1100 [API/0] OUT App instance exited with guid 0a18877c-e26f-41eb-999b-496570dc1112 payload: {"instance"=>"b043f727-a92c-4a92-4fb9-02ce", "index"=>0, "cell_id"=>"b33b8326-56a2-4d2a-b8a9-703fb2250e24", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>1, "crash_timestamp"=>1611213812901444422, "version"=>"7f6f4a92-ab3e-48f3-8337-0d6c8954816d"}
+   2021-01-21T18:23:33.05+1100 [CELL/0] OUT Cell a5f18510-b4fb-445b-84b0-f5df0dba5ac7 creating container for instance 4883219b-429b-44a9-6add-8e82
+   2021-01-21T18:23:33.12+1100 [PROXY/0] OUT Exit status 137
+   2021-01-21T18:23:33.72+1100 [CELL/0] OUT Cell b33b8326-56a2-4d2a-b8a9-703fb2250e24 successfully destroyed container for instance b043f727-a92c-4a92-4fb9-02ce
+   2021-01-21T18:23:33.78+1100 [CELL/0] OUT Cell a5f18510-b4fb-445b-84b0-f5df0dba5ac7 successfully created container for instance 4883219b-429b-44a9-6add-8e82
+   2021-01-21T18:23:33.97+1100 [CELL/0] OUT Downloading droplet...
+   2021-01-21T18:23:35.57+1100 [CELL/0] OUT Downloaded droplet (24.4M)
+   2021-01-21T18:23:35.57+1100 [CELL/0] OUT Starting health monitoring of container
+   2021-01-21T18:23:36.46+1100 [APP/PROC/WEB/0] ERR internal/modules/cjs/loader.js:638
+   2021-01-21T18:23:36.46+1100 [APP/PROC/WEB/0] ERR     throw err;
+   2021-01-21T18:23:36.46+1100 [APP/PROC/WEB/0] ERR     ^
+   2021-01-21T18:23:36.46+1100 [APP/PROC/WEB/0] ERR Error: Cannot find module 'cfenv'
+   2021-01-21T18:23:36.46+1100 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+   2021-01-21T18:23:36.46+1100 [APP/PROC/WEB/0] ERR     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+   2021-01-21T18:23:36.46+1100 [APP/PROC/WEB/0] ERR     at Module.require (internal/modules/cjs/loader.js:692:17)
+   2021-01-21T18:23:36.46+1100 [APP/PROC/WEB/0] ERR     at require (internal/modules/cjs/helpers.js:25:18)
+   2021-01-21T18:23:36.46+1100 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:9:15)
+   2021-01-21T18:23:36.46+1100 [APP/PROC/WEB/0] ERR     at Module._compile (internal/modules/cjs/loader.js:778:30)
+   2021-01-21T18:23:36.46+1100 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+   2021-01-21T18:23:36.46+1100 [APP/PROC/WEB/0] ERR     at Module.load (internal/modules/cjs/loader.js:653:32)
+   2021-01-21T18:23:36.46+1100 [APP/PROC/WEB/0] ERR     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+   2021-01-21T18:23:36.46+1100 [APP/PROC/WEB/0] ERR     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+   2021-01-21T18:23:36.46+1100 [APP/PROC/WEB/0] ERR     at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+   2021-01-21T18:23:36.46+1100 [APP/PROC/WEB/0] ERR     at startup (internal/bootstrap/node.js:283:19)
+   2021-01-21T18:23:36.46+1100 [APP/PROC/WEB/0] ERR     at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+   2021-01-21T18:23:36.49+1100 [APP/PROC/WEB/0] OUT Exit status 1
+   2021-01-21T18:23:42.43+1100 [CELL/0] OUT Cell a5f18510-b4fb-445b-84b0-f5df0dba5ac7 stopping instance 4883219b-429b-44a9-6add-8e82
+   2021-01-21T18:23:42.43+1100 [CELL/0] OUT Cell a5f18510-b4fb-445b-84b0-f5df0dba5ac7 destroying container for instance 4883219b-429b-44a9-6add-8e82
+   2021-01-21T18:23:42.44+1100 [API/6] OUT Process has crashed with type: "web"
+   2021-01-21T18:23:42.45+1100 [API/6] OUT App instance exited with guid 0a18877c-e26f-41eb-999b-496570dc1112 payload: {"instance"=>"4883219b-429b-44a9-6add-8e82", "index"=>0, "cell_id"=>"a5f18510-b4fb-445b-84b0-f5df0dba5ac7", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>2, "crash_timestamp"=>1611213822414168904, "version"=>"7f6f4a92-ab3e-48f3-8337-0d6c8954816d"}
+   2021-01-21T18:23:42.50+1100 [CELL/0] OUT Cell c9caf51d-447d-4a76-8cd9-48c01b5dc548 creating container for instance 38cca4dd-727d-4d51-65b9-42ce
+   2021-01-21T18:23:42.63+1100 [PROXY/0] OUT Exit status 137
+   2021-01-21T18:23:43.12+1100 [CELL/0] OUT Cell c9caf51d-447d-4a76-8cd9-48c01b5dc548 successfully created container for instance 38cca4dd-727d-4d51-65b9-42ce
+   2021-01-21T18:23:43.25+1100 [CELL/0] OUT Cell a5f18510-b4fb-445b-84b0-f5df0dba5ac7 successfully destroyed container for instance 4883219b-429b-44a9-6add-8e82
+   2021-01-21T18:23:43.70+1100 [CELL/0] OUT Downloading droplet...
+   2021-01-21T18:23:45.34+1100 [CELL/0] OUT Downloaded droplet (24.4M)
+   2021-01-21T18:23:45.34+1100 [CELL/0] OUT Starting health monitoring of container
+   2021-01-21T18:23:46.13+1100 [APP/PROC/WEB/0] ERR internal/modules/cjs/loader.js:638
+   2021-01-21T18:23:46.13+1100 [APP/PROC/WEB/0] ERR     throw err;
+   2021-01-21T18:23:46.13+1100 [APP/PROC/WEB/0] ERR     ^
+   2021-01-21T18:23:46.13+1100 [APP/PROC/WEB/0] ERR Error: Cannot find module 'cfenv'
+   2021-01-21T18:23:46.13+1100 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+   2021-01-21T18:23:46.13+1100 [APP/PROC/WEB/0] ERR     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+   2021-01-21T18:23:46.13+1100 [APP/PROC/WEB/0] ERR     at Module.require (internal/modules/cjs/loader.js:692:17)
+   2021-01-21T18:23:46.13+1100 [APP/PROC/WEB/0] ERR     at require (internal/modules/cjs/helpers.js:25:18)
+   2021-01-21T18:23:46.13+1100 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:9:15)
+   2021-01-21T18:23:46.13+1100 [APP/PROC/WEB/0] ERR     at Module._compile (internal/modules/cjs/loader.js:778:30)
+   2021-01-21T18:23:46.13+1100 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+   2021-01-21T18:23:46.13+1100 [APP/PROC/WEB/0] ERR     at Module.load (internal/modules/cjs/loader.js:653:32)
+   2021-01-21T18:23:46.13+1100 [APP/PROC/WEB/0] ERR     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+   2021-01-21T18:23:46.13+1100 [APP/PROC/WEB/0] ERR     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+   2021-01-21T18:23:46.13+1100 [APP/PROC/WEB/0] ERR     at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+   2021-01-21T18:23:46.13+1100 [APP/PROC/WEB/0] ERR     at startup (internal/bootstrap/node.js:283:19)
+   2021-01-21T18:23:46.13+1100 [APP/PROC/WEB/0] ERR     at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+   2021-01-21T18:23:46.16+1100 [APP/PROC/WEB/0] OUT Exit status 1
+   2021-01-21T18:23:52.26+1100 [CELL/0] OUT Cell c9caf51d-447d-4a76-8cd9-48c01b5dc548 stopping instance 38cca4dd-727d-4d51-65b9-42ce
+   2021-01-21T18:23:52.26+1100 [CELL/0] OUT Cell c9caf51d-447d-4a76-8cd9-48c01b5dc548 destroying container for instance 38cca4dd-727d-4d51-65b9-42ce
+   2021-01-21T18:23:52.28+1100 [API/4] OUT Process has crashed with type: "web"
+   2021-01-21T18:23:52.31+1100 [API/4] OUT App instance exited with guid 0a18877c-e26f-41eb-999b-496570dc1112 payload: {"instance"=>"38cca4dd-727d-4d51-65b9-42ce", "index"=>0, "cell_id"=>"c9caf51d-447d-4a76-8cd9-48c01b5dc548", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>3, "crash_timestamp"=>1611213832255602588, "version"=>"7f6f4a92-ab3e-48f3-8337-0d6c8954816d"}
+   2021-01-21T18:23:52.48+1100 [PROXY/0] OUT Exit status 137
+   2021-01-21T18:23:52.98+1100 [CELL/0] OUT Cell c9caf51d-447d-4a76-8cd9-48c01b5dc548 successfully destroyed container for instance 38cca4dd-727d-4d51-65b9-42ce
+   2021-01-21T18:24:45.77+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 creating container for instance 71f6e8b3-21d6-4f83-6997-bdf7
+   2021-01-21T18:24:46.45+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 successfully created container for instance 71f6e8b3-21d6-4f83-6997-bdf7
+   2021-01-21T18:24:47.31+1100 [CELL/0] OUT Downloading droplet...
+   2021-01-21T18:24:48.99+1100 [CELL/0] OUT Downloaded droplet (24.4M)
+   2021-01-21T18:24:48.99+1100 [CELL/0] OUT Starting health monitoring of container
+   2021-01-21T18:24:49.86+1100 [APP/PROC/WEB/0] ERR internal/modules/cjs/loader.js:638
+   2021-01-21T18:24:49.86+1100 [APP/PROC/WEB/0] ERR     throw err;
+   2021-01-21T18:24:49.86+1100 [APP/PROC/WEB/0] ERR     ^
+   2021-01-21T18:24:49.86+1100 [APP/PROC/WEB/0] ERR Error: Cannot find module 'cfenv'
+   2021-01-21T18:24:49.86+1100 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+   2021-01-21T18:24:49.86+1100 [APP/PROC/WEB/0] ERR     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+   2021-01-21T18:24:49.86+1100 [APP/PROC/WEB/0] ERR     at Module.require (internal/modules/cjs/loader.js:692:17)
+   2021-01-21T18:24:49.86+1100 [APP/PROC/WEB/0] ERR     at require (internal/modules/cjs/helpers.js:25:18)
+   2021-01-21T18:24:49.86+1100 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:9:15)
+   2021-01-21T18:24:49.86+1100 [APP/PROC/WEB/0] ERR     at Module._compile (internal/modules/cjs/loader.js:778:30)
+   2021-01-21T18:24:49.86+1100 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+   2021-01-21T18:24:49.86+1100 [APP/PROC/WEB/0] ERR     at Module.load (internal/modules/cjs/loader.js:653:32)
+   2021-01-21T18:24:49.86+1100 [APP/PROC/WEB/0] ERR     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+   2021-01-21T18:24:49.86+1100 [APP/PROC/WEB/0] ERR     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+   2021-01-21T18:24:49.86+1100 [APP/PROC/WEB/0] ERR     at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+   2021-01-21T18:24:49.86+1100 [APP/PROC/WEB/0] ERR     at startup (internal/bootstrap/node.js:283:19)
+   2021-01-21T18:24:49.86+1100 [APP/PROC/WEB/0] ERR     at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+   2021-01-21T18:24:49.89+1100 [APP/PROC/WEB/0] OUT Exit status 1
+   2021-01-21T18:24:55.69+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 stopping instance 71f6e8b3-21d6-4f83-6997-bdf7
+   2021-01-21T18:24:55.69+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 destroying container for instance 71f6e8b3-21d6-4f83-6997-bdf7
+   2021-01-21T18:24:55.71+1100 [API/7] OUT Process has crashed with type: "web"
+   2021-01-21T18:24:55.75+1100 [API/7] OUT App instance exited with guid 0a18877c-e26f-41eb-999b-496570dc1112 payload: {"instance"=>"71f6e8b3-21d6-4f83-6997-bdf7", "index"=>0, "cell_id"=>"56e4fa9d-b8f5-4031-a4c5-f45557e76fa6", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>4, "crash_timestamp"=>1611213895687046708, "version"=>"7f6f4a92-ab3e-48f3-8337-0d6c8954816d"}
+   2021-01-21T18:24:55.87+1100 [PROXY/0] OUT Exit status 137
+   2021-01-21T18:24:56.45+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 successfully destroyed container for instance 71f6e8b3-21d6-4f83-6997-bdf7
+   2021-01-21T18:25:29.51+1100 [API/5] OUT Updated app with guid 0a18877c-e26f-41eb-999b-496570dc1112 ({"name"=>"desttest", "command"=>"[PRIVATE DATA HIDDEN]", "memory"=>64, "buildpack"=>"nodejs_buildpack", "environment_json"=>"[PRIVATE DATA HIDDEN]"})
+   2021-01-21T18:25:52.93+1100 [API/6] OUT Uploading bits for app with guid 0a18877c-e26f-41eb-999b-496570dc1112
+   2021-01-21T18:26:01.61+1100 [API/5] OUT Updated app with guid 0a18877c-e26f-41eb-999b-496570dc1112 ({"state"=>"STOPPED"})
+   2021-01-21T18:26:02.64+1100 [API/3] OUT Creating build for app with guid 0a18877c-e26f-41eb-999b-496570dc1112
+   2021-01-21T18:26:02.86+1100 [API/3] OUT Updated app with guid 0a18877c-e26f-41eb-999b-496570dc1112 ({"state"=>"STARTED"})
+   2021-01-21T18:26:02.96+1100 [STG/0] OUT Downloading nodejs_buildpack...
+   2021-01-21T18:26:02.99+1100 [STG/0] OUT Downloaded nodejs_buildpack
+   2021-01-21T18:26:02.99+1100 [STG/0] OUT Cell edead4be-1724-4151-891e-638630b7bc18 creating container for instance fe7383f8-b2e7-437c-ba89-45bc3b067d69
+   2021-01-21T18:26:03.61+1100 [STG/0] OUT Cell edead4be-1724-4151-891e-638630b7bc18 successfully created container for instance fe7383f8-b2e7-437c-ba89-45bc3b067d69
+   2021-01-21T18:26:03.92+1100 [STG/0] OUT Downloading app package...
+   2021-01-21T18:26:03.92+1100 [STG/0] OUT Downloading build artifacts cache...
+   2021-01-21T18:26:03.97+1100 [STG/0] OUT Downloaded build artifacts cache (224B)
+   2021-01-21T18:26:04.38+1100 [STG/0] OUT Downloaded app package (3.1M)
+   2021-01-21T18:26:04.66+1100 [STG/0] OUT -----> Nodejs Buildpack version 1.7.26
+   2021-01-21T18:26:04.80+1100 [STG/0] OUT -----> Installing binaries
+   2021-01-21T18:26:04.80+1100 [STG/0] OUT        engines.node (package.json): unspecified
+   2021-01-21T18:26:04.80+1100 [STG/0] OUT        engines.npm (package.json): unspecified (use default)
+   2021-01-21T18:26:04.80+1100 [STG/0] OUT        [31;1m**WARNING**[0m Node version not specified in package.json or .nvmrc. See: http://docs.cloudfoundry.org/buildpacks/node/node-tips.html
+   2021-01-21T18:26:04.80+1100 [STG/0] OUT -----> Installing node 10.22.0
+   2021-01-21T18:26:04.80+1100 [STG/0] OUT        Copy [/tmp/buildpacks/2f7ef33ef33b902acb498c1b50a44780/dependencies/e51d3df8fc7149ddd7abb5a679730d69/node_10.22.0_linux_x64_cflinuxfs3_43616969.tgz]
+   2021-01-21T18:26:06.30+1100 [STG/0] OUT        Using default npm version: 6.14.6
+   2021-01-21T18:26:06.30+1100 [STG/0] OUT -----> Installing yarn 1.22.4
+   2021-01-21T18:26:06.30+1100 [STG/0] OUT        Copy [/tmp/buildpacks/2f7ef33ef33b902acb498c1b50a44780/dependencies/d9f0c5147bcb9ee798f041978c157822/yarn-1.22.4-any-stack-24ca2294.tgz]
+   2021-01-21T18:26:06.79+1100 [STG/0] OUT        Installed yarn 1.22.4
+   2021-01-21T18:26:06.79+1100 [STG/0] OUT -----> Creating runtime environment
+   2021-01-21T18:26:06.79+1100 [STG/0] OUT        [34;1mPRO TIP:[0m Warning: package-lock.json not found. The buildpack may reach out to the internet to download module updates, even if they are vendored.
+   2021-01-21T18:26:06.79+1100 [STG/0] OUT        Visit https://docs.cloudfoundry.org/buildpacks/node/index.html#offline_environments
+   2021-01-21T18:26:06.79+1100 [STG/0] OUT        NODE_ENV=production
+   2021-01-21T18:26:06.79+1100 [STG/0] OUT        NODE_HOME=/tmp/contents359245856/deps/0/node
+   2021-01-21T18:26:06.79+1100 [STG/0] OUT        NODE_MODULES_CACHE=true
+   2021-01-21T18:26:06.79+1100 [STG/0] OUT        NODE_VERBOSE=false
+   2021-01-21T18:26:06.79+1100 [STG/0] OUT        NPM_CONFIG_LOGLEVEL=error
+   2021-01-21T18:26:06.79+1100 [STG/0] OUT        NPM_CONFIG_PRODUCTION=true
+   2021-01-21T18:26:06.79+1100 [STG/0] OUT -----> Building dependencies
+   2021-01-21T18:26:06.79+1100 [STG/0] OUT        Prebuild detected (node_modules already exists)
+   2021-01-21T18:26:06.79+1100 [STG/0] OUT        Rebuilding any native modules
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT cfenv@1.2.3 /tmp/app/node_modules/cfenv
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT js-yaml@3.13.1 /tmp/app/node_modules/js-yaml
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT argparse@1.0.10 /tmp/app/node_modules/argparse
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT sprintf-js@1.0.3 /tmp/app/node_modules/sprintf-js
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT esprima@4.0.1 /tmp/app/node_modules/esprima
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT ports@1.1.0 /tmp/app/node_modules/ports
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT underscore@1.9.2 /tmp/app/node_modules/underscore
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT client-oauth2@4.3.3 /tmp/app/node_modules/client-oauth2
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT popsicle@12.1.0 /tmp/app/node_modules/popsicle
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT popsicle-content-encoding@1.0.0 /tmp/app/node_modules/popsicle-content-encoding
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT popsicle-cookie-jar@1.0.0 /tmp/app/node_modules/popsicle-cookie-jar
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT @types/tough-cookie@2.3.7 /tmp/app/node_modules/@types/tough-cookie
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT tough-cookie@3.0.1 /tmp/app/node_modules/tough-cookie
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT ip-regex@2.1.0 /tmp/app/node_modules/ip-regex
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT psl@1.8.0 /tmp/app/node_modules/psl
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT punycode@2.1.1 /tmp/app/node_modules/punycode
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT popsicle-redirects@1.1.0 /tmp/app/node_modules/popsicle-redirects
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT popsicle-transport-http@1.1.1 /tmp/app/node_modules/popsicle-transport-http
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT cacheable-lookup@5.0.4 /tmp/app/node_modules/cacheable-lookup
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT make-error-cause@2.3.0 /tmp/app/node_modules/make-error-cause
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT make-error@1.3.6 /tmp/app/node_modules/make-error
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT popsicle-transport-xhr@2.0.0 /tmp/app/node_modules/popsicle-transport-xhr
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT popsicle-user-agent@1.0.0 /tmp/app/node_modules/popsicle-user-agent
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT servie@4.3.3 /tmp/app/node_modules/servie
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT @servie/events@1.0.0 /tmp/app/node_modules/@servie/events
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT byte-length@1.0.2 /tmp/app/node_modules/byte-length
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT ts-expect@1.1.0 /tmp/app/node_modules/ts-expect
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT throwback@4.1.0 /tmp/app/node_modules/throwback
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT safe-buffer@5.2.1 /tmp/app/node_modules/safe-buffer
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT express@4.17.1 /tmp/app/node_modules/express
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT accepts@1.3.7 /tmp/app/node_modules/accepts
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT mime-types@2.1.28 /tmp/app/node_modules/mime-types
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT mime-db@1.45.0 /tmp/app/node_modules/mime-db
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT negotiator@0.6.2 /tmp/app/node_modules/negotiator
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT array-flatten@1.1.1 /tmp/app/node_modules/array-flatten
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT body-parser@1.19.0 /tmp/app/node_modules/body-parser
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT bytes@3.1.0 /tmp/app/node_modules/bytes
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT content-type@1.0.4 /tmp/app/node_modules/content-type
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT debug@2.6.9 /tmp/app/node_modules/debug
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT ms@2.0.0 /tmp/app/node_modules/ms
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT depd@1.1.2 /tmp/app/node_modules/depd
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT http-errors@1.7.2 /tmp/app/node_modules/http-errors
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT inherits@2.0.3 /tmp/app/node_modules/inherits
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT setprototypeof@1.1.1 /tmp/app/node_modules/setprototypeof
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT statuses@1.5.0 /tmp/app/node_modules/statuses
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT toidentifier@1.0.0 /tmp/app/node_modules/toidentifier
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT iconv-lite@0.4.24 /tmp/app/node_modules/iconv-lite
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT safer-buffer@2.1.2 /tmp/app/node_modules/safer-buffer
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT on-finished@2.3.0 /tmp/app/node_modules/on-finished
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT ee-first@1.1.1 /tmp/app/node_modules/ee-first
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT qs@6.7.0 /tmp/app/node_modules/qs
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT raw-body@2.4.0 /tmp/app/node_modules/raw-body
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT unpipe@1.0.0 /tmp/app/node_modules/unpipe
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT type-is@1.6.18 /tmp/app/node_modules/type-is
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT media-typer@0.3.0 /tmp/app/node_modules/media-typer
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT content-disposition@0.5.3 /tmp/app/node_modules/content-disposition
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT safe-buffer@5.1.2 /tmp/app/node_modules/content-disposition/node_modules/safe-buffer
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT cookie@0.4.0 /tmp/app/node_modules/cookie
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT cookie-signature@1.0.6 /tmp/app/node_modules/cookie-signature
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT encodeurl@1.0.2 /tmp/app/node_modules/encodeurl
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT escape-html@1.0.3 /tmp/app/node_modules/escape-html
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT etag@1.8.1 /tmp/app/node_modules/etag
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT finalhandler@1.1.2 /tmp/app/node_modules/finalhandler
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT parseurl@1.3.3 /tmp/app/node_modules/parseurl
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT fresh@0.5.2 /tmp/app/node_modules/fresh
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT merge-descriptors@1.0.1 /tmp/app/node_modules/merge-descriptors
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT methods@1.1.2 /tmp/app/node_modules/methods
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT path-to-regexp@0.1.7 /tmp/app/node_modules/path-to-regexp
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT proxy-addr@2.0.6 /tmp/app/node_modules/proxy-addr
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT forwarded@0.1.2 /tmp/app/node_modules/forwarded
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT ipaddr.js@1.9.1 /tmp/app/node_modules/ipaddr.js
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT range-parser@1.2.1 /tmp/app/node_modules/range-parser
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT safe-buffer@5.1.2 /tmp/app/node_modules/express/node_modules/safe-buffer
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT send@0.17.1 /tmp/app/node_modules/send
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT destroy@1.0.4 /tmp/app/node_modules/destroy
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT mime@1.6.0 /tmp/app/node_modules/mime
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT ms@2.1.1 /tmp/app/node_modules/send/node_modules/ms
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT serve-static@1.14.1 /tmp/app/node_modules/serve-static
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT utils-merge@1.0.1 /tmp/app/node_modules/utils-merge
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT vary@1.1.2 /tmp/app/node_modules/vary
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT request@2.88.2 /tmp/app/node_modules/request
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT aws-sign2@0.7.0 /tmp/app/node_modules/aws-sign2
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT aws4@1.11.0 /tmp/app/node_modules/aws4
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT caseless@0.12.0 /tmp/app/node_modules/caseless
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT combined-stream@1.0.8 /tmp/app/node_modules/combined-stream
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT delayed-stream@1.0.0 /tmp/app/node_modules/delayed-stream
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT extend@3.0.2 /tmp/app/node_modules/extend
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT forever-agent@0.6.1 /tmp/app/node_modules/forever-agent
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT form-data@2.3.3 /tmp/app/node_modules/form-data
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT asynckit@0.4.0 /tmp/app/node_modules/asynckit
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT har-validator@5.1.5 /tmp/app/node_modules/har-validator
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT ajv@6.12.6 /tmp/app/node_modules/ajv
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT fast-deep-equal@3.1.3 /tmp/app/node_modules/fast-deep-equal
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT fast-json-stable-stringify@2.1.0 /tmp/app/node_modules/fast-json-stable-stringify
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT json-schema-traverse@0.4.1 /tmp/app/node_modules/json-schema-traverse
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT uri-js@4.4.1 /tmp/app/node_modules/uri-js
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT har-schema@2.0.0 /tmp/app/node_modules/har-schema
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT http-signature@1.2.0 /tmp/app/node_modules/http-signature
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT assert-plus@1.0.0 /tmp/app/node_modules/assert-plus
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT jsprim@1.4.1 /tmp/app/node_modules/jsprim
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT extsprintf@1.3.0 /tmp/app/node_modules/extsprintf
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT json-schema@0.2.3 /tmp/app/node_modules/json-schema
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT verror@1.10.0 /tmp/app/node_modules/verror
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT core-util-is@1.0.2 /tmp/app/node_modules/core-util-is
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT sshpk@1.16.1 /tmp/app/node_modules/sshpk
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT asn1@0.2.4 /tmp/app/node_modules/asn1
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT bcrypt-pbkdf@1.0.2 /tmp/app/node_modules/bcrypt-pbkdf
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT tweetnacl@0.14.5 /tmp/app/node_modules/tweetnacl
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT dashdash@1.14.1 /tmp/app/node_modules/dashdash
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT ecc-jsbn@0.1.2 /tmp/app/node_modules/ecc-jsbn
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT jsbn@0.1.1 /tmp/app/node_modules/jsbn
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT getpass@0.1.7 /tmp/app/node_modules/getpass
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT is-typedarray@1.0.0 /tmp/app/node_modules/is-typedarray
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT isstream@0.1.2 /tmp/app/node_modules/isstream
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT json-stringify-safe@5.0.1 /tmp/app/node_modules/json-stringify-safe
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT oauth-sign@0.9.0 /tmp/app/node_modules/oauth-sign
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT performance-now@2.1.0 /tmp/app/node_modules/performance-now
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT qs@6.5.2 /tmp/app/node_modules/request/node_modules/qs
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT tough-cookie@2.5.0 /tmp/app/node_modules/request/node_modules/tough-cookie
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT tunnel-agent@0.6.0 /tmp/app/node_modules/tunnel-agent
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT uuid@3.4.0 /tmp/app/node_modules/uuid
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT request-promise@4.2.6 /tmp/app/node_modules/request-promise
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT bluebird@3.7.2 /tmp/app/node_modules/bluebird
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT request-promise-core@1.1.4 /tmp/app/node_modules/request-promise-core
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT lodash@4.17.20 /tmp/app/node_modules/lodash
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT stealthy-require@1.1.1 /tmp/app/node_modules/stealthy-require
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT tough-cookie@2.5.0 /tmp/app/node_modules/request-promise/node_modules/tough-cookie
+   2021-01-21T18:26:07.66+1100 [STG/0] OUT        Installing any new modules (package.json)
+   2021-01-21T18:26:08.83+1100 [STG/0] OUT up to date in 0.641s
+   2021-01-21T18:26:08.88+1100 [STG/0] OUT 2 packages are looking for funding
+   2021-01-21T18:26:08.88+1100 [STG/0] OUT   run `npm fund` for details
+   2021-01-21T18:26:09.87+1100 [STG/0] OUT        Contrast Security no credentials found. Will not write environment files.
+   2021-01-21T18:26:14.49+1100 [STG/0] OUT Exit status 0
+   2021-01-21T18:26:14.49+1100 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2021-01-21T18:26:14.49+1100 [STG/0] OUT Uploading droplet...
+   2021-01-21T18:26:14.49+1100 [STG/0] OUT Uploading build artifacts cache...
+   2021-01-21T18:26:14.54+1100 [STG/0] OUT Uploaded build artifacts cache (224B)
+   2021-01-21T18:26:14.92+1100 [API/6] OUT Creating droplet for app with guid 0a18877c-e26f-41eb-999b-496570dc1112
+   2021-01-21T18:26:18.03+1100 [STG/0] OUT Uploaded droplet (24.6M)
+   2021-01-21T18:26:18.03+1100 [STG/0] OUT Uploading complete
+   2021-01-21T18:26:18.46+1100 [STG/0] OUT Cell edead4be-1724-4151-891e-638630b7bc18 stopping instance fe7383f8-b2e7-437c-ba89-45bc3b067d69
+   2021-01-21T18:26:18.46+1100 [STG/0] OUT Cell edead4be-1724-4151-891e-638630b7bc18 destroying container for instance fe7383f8-b2e7-437c-ba89-45bc3b067d69
+   2021-01-21T18:26:18.86+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 creating container for instance 482e8684-1b94-4b2f-60e2-0263
+   2021-01-21T18:26:19.06+1100 [STG/0] OUT Cell edead4be-1724-4151-891e-638630b7bc18 successfully destroyed container for instance fe7383f8-b2e7-437c-ba89-45bc3b067d69
+   2021-01-21T18:26:19.53+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 successfully created container for instance 482e8684-1b94-4b2f-60e2-0263
+   2021-01-21T18:26:19.71+1100 [CELL/0] OUT Downloading droplet...
+   2021-01-21T18:26:21.41+1100 [CELL/0] OUT Downloaded droplet (24.6M)
+   2021-01-21T18:26:21.41+1100 [CELL/0] OUT Starting health monitoring of container
+   2021-01-21T18:26:22.23+1100 [APP/PROC/WEB/0] ERR /home/vcap/app/app.js:13
+   2021-01-21T18:26:22.23+1100 [APP/PROC/WEB/0] ERR const destClientId = credentials.clientid;
+   2021-01-21T18:26:22.23+1100 [APP/PROC/WEB/0] ERR                                  ^
+   2021-01-21T18:26:22.23+1100 [APP/PROC/WEB/0] ERR TypeError: Cannot read property 'clientid' of null
+   2021-01-21T18:26:22.23+1100 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:13:34)
+   2021-01-21T18:26:22.23+1100 [APP/PROC/WEB/0] ERR     at Module._compile (internal/modules/cjs/loader.js:778:30)
+   2021-01-21T18:26:22.23+1100 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+   2021-01-21T18:26:22.23+1100 [APP/PROC/WEB/0] ERR     at Module.load (internal/modules/cjs/loader.js:653:32)
+   2021-01-21T18:26:22.23+1100 [APP/PROC/WEB/0] ERR     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+   2021-01-21T18:26:22.23+1100 [APP/PROC/WEB/0] ERR     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+   2021-01-21T18:26:22.23+1100 [APP/PROC/WEB/0] ERR     at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+   2021-01-21T18:26:22.23+1100 [APP/PROC/WEB/0] ERR     at startup (internal/bootstrap/node.js:283:19)
+   2021-01-21T18:26:22.23+1100 [APP/PROC/WEB/0] ERR     at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+   2021-01-21T18:26:22.26+1100 [APP/PROC/WEB/0] OUT Exit status 1
+   2021-01-21T18:26:27.95+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 stopping instance 482e8684-1b94-4b2f-60e2-0263
+   2021-01-21T18:26:27.95+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 destroying container for instance 482e8684-1b94-4b2f-60e2-0263
+   2021-01-21T18:26:27.96+1100 [API/0] OUT Process has crashed with type: "web"
+   2021-01-21T18:26:27.97+1100 [API/0] OUT App instance exited with guid 0a18877c-e26f-41eb-999b-496570dc1112 payload: {"instance"=>"482e8684-1b94-4b2f-60e2-0263", "index"=>0, "cell_id"=>"56e4fa9d-b8f5-4031-a4c5-f45557e76fa6", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>1, "crash_timestamp"=>1611213987933195629, "version"=>"e0d68542-036c-4be4-96db-53b1aa2d9ebc"}
+   2021-01-21T18:26:28.01+1100 [CELL/0] OUT Cell a5f18510-b4fb-445b-84b0-f5df0dba5ac7 creating container for instance 81f03a75-77ac-4a1e-5b53-a29d
+   2021-01-21T18:26:28.15+1100 [PROXY/0] OUT Exit status 137
+   2021-01-21T18:26:28.75+1100 [CELL/0] OUT Cell a5f18510-b4fb-445b-84b0-f5df0dba5ac7 successfully created container for instance 81f03a75-77ac-4a1e-5b53-a29d
+   2021-01-21T18:26:28.76+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 successfully destroyed container for instance 482e8684-1b94-4b2f-60e2-0263
+   2021-01-21T18:26:29.00+1100 [CELL/0] OUT Downloading droplet...
+   2021-01-21T18:26:30.70+1100 [CELL/0] OUT Downloaded droplet (24.6M)
+   2021-01-21T18:26:30.70+1100 [CELL/0] OUT Starting health monitoring of container
+   2021-01-21T18:26:31.55+1100 [APP/PROC/WEB/0] ERR /home/vcap/app/app.js:13
+   2021-01-21T18:26:31.55+1100 [APP/PROC/WEB/0] ERR const destClientId = credentials.clientid;
+   2021-01-21T18:26:31.55+1100 [APP/PROC/WEB/0] ERR                                  ^
+   2021-01-21T18:26:31.55+1100 [APP/PROC/WEB/0] ERR TypeError: Cannot read property 'clientid' of null
+   2021-01-21T18:26:31.55+1100 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:13:34)
+   2021-01-21T18:26:31.55+1100 [APP/PROC/WEB/0] ERR     at Module._compile (internal/modules/cjs/loader.js:778:30)
+   2021-01-21T18:26:31.55+1100 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+   2021-01-21T18:26:31.55+1100 [APP/PROC/WEB/0] ERR     at Module.load (internal/modules/cjs/loader.js:653:32)
+   2021-01-21T18:26:31.55+1100 [APP/PROC/WEB/0] ERR     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+   2021-01-21T18:26:31.55+1100 [APP/PROC/WEB/0] ERR     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+   2021-01-21T18:26:31.55+1100 [APP/PROC/WEB/0] ERR     at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+   2021-01-21T18:26:31.55+1100 [APP/PROC/WEB/0] ERR     at startup (internal/bootstrap/node.js:283:19)
+   2021-01-21T18:26:31.56+1100 [APP/PROC/WEB/0] ERR     at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+   2021-01-21T18:26:31.59+1100 [APP/PROC/WEB/0] OUT Exit status 1
+   2021-01-21T18:26:37.59+1100 [CELL/0] OUT Cell a5f18510-b4fb-445b-84b0-f5df0dba5ac7 stopping instance 81f03a75-77ac-4a1e-5b53-a29d
+   2021-01-21T18:26:37.59+1100 [CELL/0] OUT Cell a5f18510-b4fb-445b-84b0-f5df0dba5ac7 destroying container for instance 81f03a75-77ac-4a1e-5b53-a29d
+   2021-01-21T18:26:37.65+1100 [API/2] OUT Process has crashed with type: "web"
+   2021-01-21T18:26:37.66+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 creating container for instance 4b0c0a0b-ecd4-4cf5-4b04-0fe6
+   2021-01-21T18:26:37.69+1100 [API/2] OUT App instance exited with guid 0a18877c-e26f-41eb-999b-496570dc1112 payload: {"instance"=>"81f03a75-77ac-4a1e-5b53-a29d", "index"=>0, "cell_id"=>"a5f18510-b4fb-445b-84b0-f5df0dba5ac7", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>2, "crash_timestamp"=>1611213997571677806, "version"=>"e0d68542-036c-4be4-96db-53b1aa2d9ebc"}
+   2021-01-21T18:26:37.80+1100 [PROXY/0] OUT Exit status 137
+   2021-01-21T18:26:38.33+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 successfully created container for instance 4b0c0a0b-ecd4-4cf5-4b04-0fe6
+   2021-01-21T18:26:38.43+1100 [CELL/0] OUT Cell a5f18510-b4fb-445b-84b0-f5df0dba5ac7 successfully destroyed container for instance 81f03a75-77ac-4a1e-5b53-a29d
+   2021-01-21T18:26:38.44+1100 [CELL/0] OUT Downloading droplet...
+   2021-01-21T18:26:39.14+1100 [CELL/0] OUT Downloaded droplet
+   2021-01-21T18:26:39.14+1100 [CELL/0] OUT Starting health monitoring of container
+   2021-01-21T18:26:39.97+1100 [APP/PROC/WEB/0] ERR /home/vcap/app/app.js:13
+   2021-01-21T18:26:39.97+1100 [APP/PROC/WEB/0] ERR const destClientId = credentials.clientid;
+   2021-01-21T18:26:39.97+1100 [APP/PROC/WEB/0] ERR                                  ^
+   2021-01-21T18:26:39.97+1100 [APP/PROC/WEB/0] ERR TypeError: Cannot read property 'clientid' of null
+   2021-01-21T18:26:39.97+1100 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:13:34)
+   2021-01-21T18:26:39.97+1100 [APP/PROC/WEB/0] ERR     at Module._compile (internal/modules/cjs/loader.js:778:30)
+   2021-01-21T18:26:39.97+1100 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+   2021-01-21T18:26:39.97+1100 [APP/PROC/WEB/0] ERR     at Module.load (internal/modules/cjs/loader.js:653:32)
+   2021-01-21T18:26:39.97+1100 [APP/PROC/WEB/0] ERR     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+   2021-01-21T18:26:39.97+1100 [APP/PROC/WEB/0] ERR     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+   2021-01-21T18:26:39.97+1100 [APP/PROC/WEB/0] ERR     at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+   2021-01-21T18:26:39.97+1100 [APP/PROC/WEB/0] ERR     at startup (internal/bootstrap/node.js:283:19)
+   2021-01-21T18:26:39.97+1100 [APP/PROC/WEB/0] ERR     at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+   2021-01-21T18:26:40.00+1100 [APP/PROC/WEB/0] OUT Exit status 1
+   2021-01-21T18:26:45.62+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 stopping instance 4b0c0a0b-ecd4-4cf5-4b04-0fe6
+   2021-01-21T18:26:45.62+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 destroying container for instance 4b0c0a0b-ecd4-4cf5-4b04-0fe6
+   2021-01-21T18:26:45.64+1100 [API/6] OUT Process has crashed with type: "web"
+   2021-01-21T18:26:45.67+1100 [API/6] OUT App instance exited with guid 0a18877c-e26f-41eb-999b-496570dc1112 payload: {"instance"=>"4b0c0a0b-ecd4-4cf5-4b04-0fe6", "index"=>0, "cell_id"=>"56e4fa9d-b8f5-4031-a4c5-f45557e76fa6", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>3, "crash_timestamp"=>1611214005615905877, "version"=>"e0d68542-036c-4be4-96db-53b1aa2d9ebc"}
+   2021-01-21T18:26:45.82+1100 [PROXY/0] OUT Exit status 137
+   2021-01-21T18:26:46.43+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 successfully destroyed container for instance 4b0c0a0b-ecd4-4cf5-4b04-0fe6
+   2021-01-21T18:27:16.09+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 creating container for instance 541ece4b-b6f1-4584-7450-22be
+   2021-01-21T18:27:16.76+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 successfully created container for instance 541ece4b-b6f1-4584-7450-22be
+   2021-01-21T18:27:17.26+1100 [CELL/0] OUT Downloading droplet...
+   2021-01-21T18:27:18.01+1100 [CELL/0] OUT Downloaded droplet
+   2021-01-21T18:27:18.01+1100 [CELL/0] OUT Starting health monitoring of container
+   2021-01-21T18:27:18.94+1100 [APP/PROC/WEB/0] ERR /home/vcap/app/app.js:13
+   2021-01-21T18:27:18.94+1100 [APP/PROC/WEB/0] ERR const destClientId = credentials.clientid;
+   2021-01-21T18:27:18.94+1100 [APP/PROC/WEB/0] ERR                                  ^
+   2021-01-21T18:27:18.94+1100 [APP/PROC/WEB/0] ERR TypeError: Cannot read property 'clientid' of null
+   2021-01-21T18:27:18.94+1100 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:13:34)
+   2021-01-21T18:27:18.94+1100 [APP/PROC/WEB/0] ERR     at Module._compile (internal/modules/cjs/loader.js:778:30)
+   2021-01-21T18:27:18.95+1100 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+   2021-01-21T18:27:18.95+1100 [APP/PROC/WEB/0] ERR     at Module.load (internal/modules/cjs/loader.js:653:32)
+   2021-01-21T18:27:18.95+1100 [APP/PROC/WEB/0] ERR     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+   2021-01-21T18:27:18.95+1100 [APP/PROC/WEB/0] ERR     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+   2021-01-21T18:27:18.95+1100 [APP/PROC/WEB/0] ERR     at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+   2021-01-21T18:27:18.95+1100 [APP/PROC/WEB/0] ERR     at startup (internal/bootstrap/node.js:283:19)
+   2021-01-21T18:27:18.95+1100 [APP/PROC/WEB/0] ERR     at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+   2021-01-21T18:27:18.98+1100 [APP/PROC/WEB/0] OUT Exit status 1
+   2021-01-21T18:27:24.79+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 stopping instance 541ece4b-b6f1-4584-7450-22be
+   2021-01-21T18:27:24.79+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 destroying container for instance 541ece4b-b6f1-4584-7450-22be
+   2021-01-21T18:27:24.81+1100 [API/5] OUT Process has crashed with type: "web"
+   2021-01-21T18:27:24.84+1100 [API/5] OUT App instance exited with guid 0a18877c-e26f-41eb-999b-496570dc1112 payload: {"instance"=>"541ece4b-b6f1-4584-7450-22be", "index"=>0, "cell_id"=>"56e4fa9d-b8f5-4031-a4c5-f45557e76fa6", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>4, "crash_timestamp"=>1611214044785703050, "version"=>"e0d68542-036c-4be4-96db-53b1aa2d9ebc"}
+   2021-01-21T18:27:24.98+1100 [PROXY/0] OUT Exit status 137
+   2021-01-21T18:27:25.60+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 successfully destroyed container for instance 541ece4b-b6f1-4584-7450-22be
+   2021-01-21T18:28:46.27+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 creating container for instance d05779f2-15bc-475d-42e0-089b
+   2021-01-21T18:28:46.94+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 successfully created container for instance d05779f2-15bc-475d-42e0-089b
+   2021-01-21T18:28:47.19+1100 [CELL/0] OUT Downloading droplet...
+   2021-01-21T18:28:47.78+1100 [CELL/0] OUT Downloaded droplet
+   2021-01-21T18:28:47.78+1100 [CELL/0] OUT Starting health monitoring of container
+   2021-01-21T18:28:48.70+1100 [APP/PROC/WEB/0] ERR /home/vcap/app/app.js:13
+   2021-01-21T18:28:48.70+1100 [APP/PROC/WEB/0] ERR const destClientId = credentials.clientid;
+   2021-01-21T18:28:48.70+1100 [APP/PROC/WEB/0] ERR                                  ^
+   2021-01-21T18:28:48.70+1100 [APP/PROC/WEB/0] ERR TypeError: Cannot read property 'clientid' of null
+   2021-01-21T18:28:48.70+1100 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:13:34)
+   2021-01-21T18:28:48.70+1100 [APP/PROC/WEB/0] ERR     at Module._compile (internal/modules/cjs/loader.js:778:30)
+   2021-01-21T18:28:48.70+1100 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+   2021-01-21T18:28:48.70+1100 [APP/PROC/WEB/0] ERR     at Module.load (internal/modules/cjs/loader.js:653:32)
+   2021-01-21T18:28:48.70+1100 [APP/PROC/WEB/0] ERR     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+   2021-01-21T18:28:48.70+1100 [APP/PROC/WEB/0] ERR     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+   2021-01-21T18:28:48.70+1100 [APP/PROC/WEB/0] ERR     at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+   2021-01-21T18:28:48.70+1100 [APP/PROC/WEB/0] ERR     at startup (internal/bootstrap/node.js:283:19)
+   2021-01-21T18:28:48.70+1100 [APP/PROC/WEB/0] ERR     at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+   2021-01-21T18:28:48.74+1100 [APP/PROC/WEB/0] OUT Exit status 1
+   2021-01-21T18:28:54.77+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 stopping instance d05779f2-15bc-475d-42e0-089b
+   2021-01-21T18:28:54.77+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 destroying container for instance d05779f2-15bc-475d-42e0-089b
+   2021-01-21T18:28:54.79+1100 [API/4] OUT Process has crashed with type: "web"
+   2021-01-21T18:28:54.83+1100 [API/4] OUT App instance exited with guid 0a18877c-e26f-41eb-999b-496570dc1112 payload: {"instance"=>"d05779f2-15bc-475d-42e0-089b", "index"=>0, "cell_id"=>"56e4fa9d-b8f5-4031-a4c5-f45557e76fa6", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>5, "crash_timestamp"=>1611214134768412590, "version"=>"e0d68542-036c-4be4-96db-53b1aa2d9ebc"}
+   2021-01-21T18:28:54.96+1100 [PROXY/0] OUT Exit status 137
+   2021-01-21T18:28:55.55+1100 [CELL/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 successfully destroyed container for instance d05779f2-15bc-475d-42e0-089b
+   2021-01-21T18:29:09.94+1100 [API/1] OUT Updated app with guid 0a18877c-e26f-41eb-999b-496570dc1112 ({"name"=>"desttest", "command"=>"[PRIVATE DATA HIDDEN]", "memory"=>64, "buildpack"=>"nodejs_buildpack", "environment_json"=>"[PRIVATE DATA HIDDEN]"})
+   2021-01-21T18:29:35.31+1100 [API/7] OUT Uploading bits for app with guid 0a18877c-e26f-41eb-999b-496570dc1112
+   2021-01-21T18:29:42.98+1100 [API/6] OUT Updated app with guid 0a18877c-e26f-41eb-999b-496570dc1112 ({"state"=>"STOPPED"})
+   2021-01-21T18:29:43.62+1100 [API/5] OUT Creating build for app with guid 0a18877c-e26f-41eb-999b-496570dc1112
+   2021-01-21T18:29:43.82+1100 [API/5] OUT Updated app with guid 0a18877c-e26f-41eb-999b-496570dc1112 ({"state"=>"STARTED"})
+   2021-01-21T18:29:43.85+1100 [STG/0] OUT Downloading nodejs_buildpack...
+   2021-01-21T18:29:43.88+1100 [STG/0] OUT Downloaded nodejs_buildpack
+   2021-01-21T18:29:43.88+1100 [STG/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 creating container for instance bb425c6b-1be4-4d83-a2c2-14cb9dade791
+   2021-01-21T18:29:44.67+1100 [STG/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 successfully created container for instance bb425c6b-1be4-4d83-a2c2-14cb9dade791
+   2021-01-21T18:29:44.90+1100 [STG/0] OUT Downloading app package...
+   2021-01-21T18:29:44.90+1100 [STG/0] OUT Downloading build artifacts cache...
+   2021-01-21T18:29:44.95+1100 [STG/0] OUT Downloaded build artifacts cache (224B)
+   2021-01-21T18:29:45.40+1100 [STG/0] OUT Downloaded app package (3.1M)
+   2021-01-21T18:29:45.67+1100 [STG/0] OUT -----> Nodejs Buildpack version 1.7.26
+   2021-01-21T18:29:45.81+1100 [STG/0] OUT -----> Installing binaries
+   2021-01-21T18:29:45.81+1100 [STG/0] OUT        engines.node (package.json): unspecified
+   2021-01-21T18:29:45.81+1100 [STG/0] OUT        engines.npm (package.json): unspecified (use default)
+   2021-01-21T18:29:45.81+1100 [STG/0] OUT        [31;1m**WARNING**[0m Node version not specified in package.json or .nvmrc. See: http://docs.cloudfoundry.org/buildpacks/node/node-tips.html
+   2021-01-21T18:29:45.81+1100 [STG/0] OUT -----> Installing node 10.22.0
+   2021-01-21T18:29:45.81+1100 [STG/0] OUT        Copy [/tmp/buildpacks/2f7ef33ef33b902acb498c1b50a44780/dependencies/e51d3df8fc7149ddd7abb5a679730d69/node_10.22.0_linux_x64_cflinuxfs3_43616969.tgz]
+   2021-01-21T18:29:47.34+1100 [STG/0] OUT        Using default npm version: 6.14.6
+   2021-01-21T18:29:47.34+1100 [STG/0] OUT -----> Installing yarn 1.22.4
+   2021-01-21T18:29:47.34+1100 [STG/0] OUT        Copy [/tmp/buildpacks/2f7ef33ef33b902acb498c1b50a44780/dependencies/d9f0c5147bcb9ee798f041978c157822/yarn-1.22.4-any-stack-24ca2294.tgz]
+   2021-01-21T18:29:47.83+1100 [STG/0] OUT        Installed yarn 1.22.4
+   2021-01-21T18:29:47.83+1100 [STG/0] OUT -----> Creating runtime environment
+   2021-01-21T18:29:47.83+1100 [STG/0] OUT        [34;1mPRO TIP:[0m Warning: package-lock.json not found. The buildpack may reach out to the internet to download module updates, even if they are vendored.
+   2021-01-21T18:29:47.83+1100 [STG/0] OUT        Visit https://docs.cloudfoundry.org/buildpacks/node/index.html#offline_environments
+   2021-01-21T18:29:47.83+1100 [STG/0] OUT        NODE_ENV=production
+   2021-01-21T18:29:47.83+1100 [STG/0] OUT        NODE_HOME=/tmp/contents030156942/deps/0/node
+   2021-01-21T18:29:47.83+1100 [STG/0] OUT        NODE_MODULES_CACHE=true
+   2021-01-21T18:29:47.83+1100 [STG/0] OUT        NODE_VERBOSE=false
+   2021-01-21T18:29:47.83+1100 [STG/0] OUT        NPM_CONFIG_LOGLEVEL=error
+   2021-01-21T18:29:47.83+1100 [STG/0] OUT        NPM_CONFIG_PRODUCTION=true
+   2021-01-21T18:29:47.83+1100 [STG/0] OUT -----> Building dependencies
+   2021-01-21T18:29:47.83+1100 [STG/0] OUT        Prebuild detected (node_modules already exists)
+   2021-01-21T18:29:47.83+1100 [STG/0] OUT        Rebuilding any native modules
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT cfenv@1.2.3 /tmp/app/node_modules/cfenv
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT js-yaml@3.13.1 /tmp/app/node_modules/js-yaml
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT argparse@1.0.10 /tmp/app/node_modules/argparse
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT sprintf-js@1.0.3 /tmp/app/node_modules/sprintf-js
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT esprima@4.0.1 /tmp/app/node_modules/esprima
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT ports@1.1.0 /tmp/app/node_modules/ports
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT underscore@1.9.2 /tmp/app/node_modules/underscore
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT client-oauth2@4.3.3 /tmp/app/node_modules/client-oauth2
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT popsicle@12.1.0 /tmp/app/node_modules/popsicle
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT popsicle-content-encoding@1.0.0 /tmp/app/node_modules/popsicle-content-encoding
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT popsicle-cookie-jar@1.0.0 /tmp/app/node_modules/popsicle-cookie-jar
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT @types/tough-cookie@2.3.7 /tmp/app/node_modules/@types/tough-cookie
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT tough-cookie@3.0.1 /tmp/app/node_modules/tough-cookie
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT ip-regex@2.1.0 /tmp/app/node_modules/ip-regex
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT psl@1.8.0 /tmp/app/node_modules/psl
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT punycode@2.1.1 /tmp/app/node_modules/punycode
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT popsicle-redirects@1.1.0 /tmp/app/node_modules/popsicle-redirects
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT popsicle-transport-http@1.1.1 /tmp/app/node_modules/popsicle-transport-http
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT cacheable-lookup@5.0.4 /tmp/app/node_modules/cacheable-lookup
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT make-error-cause@2.3.0 /tmp/app/node_modules/make-error-cause
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT make-error@1.3.6 /tmp/app/node_modules/make-error
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT popsicle-transport-xhr@2.0.0 /tmp/app/node_modules/popsicle-transport-xhr
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT popsicle-user-agent@1.0.0 /tmp/app/node_modules/popsicle-user-agent
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT servie@4.3.3 /tmp/app/node_modules/servie
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT @servie/events@1.0.0 /tmp/app/node_modules/@servie/events
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT byte-length@1.0.2 /tmp/app/node_modules/byte-length
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT ts-expect@1.1.0 /tmp/app/node_modules/ts-expect
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT throwback@4.1.0 /tmp/app/node_modules/throwback
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT safe-buffer@5.2.1 /tmp/app/node_modules/safe-buffer
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT express@4.17.1 /tmp/app/node_modules/express
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT accepts@1.3.7 /tmp/app/node_modules/accepts
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT mime-types@2.1.28 /tmp/app/node_modules/mime-types
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT mime-db@1.45.0 /tmp/app/node_modules/mime-db
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT negotiator@0.6.2 /tmp/app/node_modules/negotiator
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT array-flatten@1.1.1 /tmp/app/node_modules/array-flatten
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT body-parser@1.19.0 /tmp/app/node_modules/body-parser
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT bytes@3.1.0 /tmp/app/node_modules/bytes
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT content-type@1.0.4 /tmp/app/node_modules/content-type
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT debug@2.6.9 /tmp/app/node_modules/debug
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT ms@2.0.0 /tmp/app/node_modules/ms
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT depd@1.1.2 /tmp/app/node_modules/depd
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT http-errors@1.7.2 /tmp/app/node_modules/http-errors
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT inherits@2.0.3 /tmp/app/node_modules/inherits
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT setprototypeof@1.1.1 /tmp/app/node_modules/setprototypeof
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT statuses@1.5.0 /tmp/app/node_modules/statuses
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT toidentifier@1.0.0 /tmp/app/node_modules/toidentifier
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT iconv-lite@0.4.24 /tmp/app/node_modules/iconv-lite
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT safer-buffer@2.1.2 /tmp/app/node_modules/safer-buffer
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT on-finished@2.3.0 /tmp/app/node_modules/on-finished
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT ee-first@1.1.1 /tmp/app/node_modules/ee-first
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT qs@6.7.0 /tmp/app/node_modules/qs
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT raw-body@2.4.0 /tmp/app/node_modules/raw-body
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT unpipe@1.0.0 /tmp/app/node_modules/unpipe
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT type-is@1.6.18 /tmp/app/node_modules/type-is
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT media-typer@0.3.0 /tmp/app/node_modules/media-typer
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT content-disposition@0.5.3 /tmp/app/node_modules/content-disposition
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT safe-buffer@5.1.2 /tmp/app/node_modules/content-disposition/node_modules/safe-buffer
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT cookie@0.4.0 /tmp/app/node_modules/cookie
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT cookie-signature@1.0.6 /tmp/app/node_modules/cookie-signature
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT encodeurl@1.0.2 /tmp/app/node_modules/encodeurl
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT escape-html@1.0.3 /tmp/app/node_modules/escape-html
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT etag@1.8.1 /tmp/app/node_modules/etag
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT finalhandler@1.1.2 /tmp/app/node_modules/finalhandler
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT parseurl@1.3.3 /tmp/app/node_modules/parseurl
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT fresh@0.5.2 /tmp/app/node_modules/fresh
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT merge-descriptors@1.0.1 /tmp/app/node_modules/merge-descriptors
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT methods@1.1.2 /tmp/app/node_modules/methods
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT path-to-regexp@0.1.7 /tmp/app/node_modules/path-to-regexp
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT proxy-addr@2.0.6 /tmp/app/node_modules/proxy-addr
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT forwarded@0.1.2 /tmp/app/node_modules/forwarded
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT ipaddr.js@1.9.1 /tmp/app/node_modules/ipaddr.js
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT range-parser@1.2.1 /tmp/app/node_modules/range-parser
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT safe-buffer@5.1.2 /tmp/app/node_modules/express/node_modules/safe-buffer
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT send@0.17.1 /tmp/app/node_modules/send
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT destroy@1.0.4 /tmp/app/node_modules/destroy
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT mime@1.6.0 /tmp/app/node_modules/mime
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT ms@2.1.1 /tmp/app/node_modules/send/node_modules/ms
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT serve-static@1.14.1 /tmp/app/node_modules/serve-static
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT utils-merge@1.0.1 /tmp/app/node_modules/utils-merge
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT vary@1.1.2 /tmp/app/node_modules/vary
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT request@2.88.2 /tmp/app/node_modules/request
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT aws-sign2@0.7.0 /tmp/app/node_modules/aws-sign2
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT aws4@1.11.0 /tmp/app/node_modules/aws4
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT caseless@0.12.0 /tmp/app/node_modules/caseless
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT combined-stream@1.0.8 /tmp/app/node_modules/combined-stream
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT delayed-stream@1.0.0 /tmp/app/node_modules/delayed-stream
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT extend@3.0.2 /tmp/app/node_modules/extend
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT forever-agent@0.6.1 /tmp/app/node_modules/forever-agent
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT form-data@2.3.3 /tmp/app/node_modules/form-data
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT asynckit@0.4.0 /tmp/app/node_modules/asynckit
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT har-validator@5.1.5 /tmp/app/node_modules/har-validator
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT ajv@6.12.6 /tmp/app/node_modules/ajv
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT fast-deep-equal@3.1.3 /tmp/app/node_modules/fast-deep-equal
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT fast-json-stable-stringify@2.1.0 /tmp/app/node_modules/fast-json-stable-stringify
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT json-schema-traverse@0.4.1 /tmp/app/node_modules/json-schema-traverse
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT uri-js@4.4.1 /tmp/app/node_modules/uri-js
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT har-schema@2.0.0 /tmp/app/node_modules/har-schema
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT http-signature@1.2.0 /tmp/app/node_modules/http-signature
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT assert-plus@1.0.0 /tmp/app/node_modules/assert-plus
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT jsprim@1.4.1 /tmp/app/node_modules/jsprim
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT extsprintf@1.3.0 /tmp/app/node_modules/extsprintf
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT json-schema@0.2.3 /tmp/app/node_modules/json-schema
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT verror@1.10.0 /tmp/app/node_modules/verror
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT core-util-is@1.0.2 /tmp/app/node_modules/core-util-is
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT sshpk@1.16.1 /tmp/app/node_modules/sshpk
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT asn1@0.2.4 /tmp/app/node_modules/asn1
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT bcrypt-pbkdf@1.0.2 /tmp/app/node_modules/bcrypt-pbkdf
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT tweetnacl@0.14.5 /tmp/app/node_modules/tweetnacl
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT dashdash@1.14.1 /tmp/app/node_modules/dashdash
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT ecc-jsbn@0.1.2 /tmp/app/node_modules/ecc-jsbn
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT jsbn@0.1.1 /tmp/app/node_modules/jsbn
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT getpass@0.1.7 /tmp/app/node_modules/getpass
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT is-typedarray@1.0.0 /tmp/app/node_modules/is-typedarray
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT isstream@0.1.2 /tmp/app/node_modules/isstream
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT json-stringify-safe@5.0.1 /tmp/app/node_modules/json-stringify-safe
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT oauth-sign@0.9.0 /tmp/app/node_modules/oauth-sign
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT performance-now@2.1.0 /tmp/app/node_modules/performance-now
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT qs@6.5.2 /tmp/app/node_modules/request/node_modules/qs
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT tough-cookie@2.5.0 /tmp/app/node_modules/request/node_modules/tough-cookie
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT tunnel-agent@0.6.0 /tmp/app/node_modules/tunnel-agent
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT uuid@3.4.0 /tmp/app/node_modules/uuid
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT request-promise@4.2.6 /tmp/app/node_modules/request-promise
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT bluebird@3.7.2 /tmp/app/node_modules/bluebird
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT request-promise-core@1.1.4 /tmp/app/node_modules/request-promise-core
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT lodash@4.17.20 /tmp/app/node_modules/lodash
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT stealthy-require@1.1.1 /tmp/app/node_modules/stealthy-require
+   2021-01-21T18:29:48.73+1100 [STG/0] OUT tough-cookie@2.5.0 /tmp/app/node_modules/request-promise/node_modules/tough-cookie
+   2021-01-21T18:29:48.74+1100 [STG/0] OUT        Installing any new modules (package.json)
+   2021-01-21T18:29:49.89+1100 [STG/0] OUT up to date in 0.615s
+   2021-01-21T18:29:49.94+1100 [STG/0] OUT 2 packages are looking for funding
+   2021-01-21T18:29:49.94+1100 [STG/0] OUT   run `npm fund` for details
+   2021-01-21T18:29:50.98+1100 [STG/0] OUT        Contrast Security no credentials found. Will not write environment files.
+   2021-01-21T18:29:55.50+1100 [STG/0] OUT Exit status 0
+   2021-01-21T18:29:55.50+1100 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2021-01-21T18:29:55.50+1100 [STG/0] OUT Uploading droplet...
+   2021-01-21T18:29:55.50+1100 [STG/0] OUT Uploading build artifacts cache...
+   2021-01-21T18:29:55.57+1100 [STG/0] OUT Uploaded build artifacts cache (225B)
+   2021-01-21T18:29:55.91+1100 [API/1] OUT Creating droplet for app with guid 0a18877c-e26f-41eb-999b-496570dc1112
+   2021-01-21T18:29:59.00+1100 [STG/0] OUT Uploaded droplet (24.6M)
+   2021-01-21T18:29:59.00+1100 [STG/0] OUT Uploading complete
+   2021-01-21T18:29:59.61+1100 [STG/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 stopping instance bb425c6b-1be4-4d83-a2c2-14cb9dade791
+   2021-01-21T18:29:59.61+1100 [STG/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 destroying container for instance bb425c6b-1be4-4d83-a2c2-14cb9dade791
+   2021-01-21T18:30:00.02+1100 [CELL/0] OUT Cell dd124d4f-c3ed-442c-9053-94ef8465b851 creating container for instance 0ffafc7f-236f-4651-4204-307b
+   2021-01-21T18:30:00.39+1100 [STG/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 successfully destroyed container for instance bb425c6b-1be4-4d83-a2c2-14cb9dade791
+   2021-01-21T18:30:00.64+1100 [CELL/0] OUT Cell dd124d4f-c3ed-442c-9053-94ef8465b851 successfully created container for instance 0ffafc7f-236f-4651-4204-307b
+   2021-01-21T18:30:00.82+1100 [CELL/0] OUT Downloading droplet...
+   2021-01-21T18:30:02.41+1100 [CELL/0] OUT Downloaded droplet (24.6M)
+   2021-01-21T18:30:02.41+1100 [CELL/0] OUT Starting health monitoring of container
+   2021-01-21T18:30:05.43+1100 [CELL/0] OUT Container became healthy
+   2021-01-21T18:31:34.19+1100 [RTR/5] OUT bsapp.cfapps.ap10.hana.ondemand.com - [2021-01-21T07:31:33.877177798Z] "GET / HTTP/1.1" 200 0 169 "https://account.hana.ondemand.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" "-" "10.0.137.42:61019" x_forwarded_for:"-" x_forwarded_proto:"https" vcap_request_id:"90bcad15-b374-4334-748c-9a9149eb8457" response_time:0.321984 gorouter_time:0.000130 app_id:"0a18877c-e26f-41eb-999b-496570dc1112" app_index:"0" x_cf_routererror:"-" x_correlationid:"-" tenantid:"-" sap_passport:"-" x_scp_request_id:"e5500945-0ccf-4e0f-aa8a-babee01d7080-60092DD5-153EDD" x_cf_app_instance:"-" x_b3_traceid:"22c9675978929dd5" x_b3_spanid:"22c9675978929dd5" x_b3_parentspanid:"-" b3:"22c9675978929dd5-22c9675978929dd5"
+   2021-01-21T18:31:34.19+1100 [RTR/5] OUT 
+   2021-01-21T18:31:34.20+1100 [APP/PROC/WEB/0] ERR Unhandled rejection TypeError: Cannot read property 'body' of undefined
+   2021-01-21T18:31:34.20+1100 [APP/PROC/WEB/0] ERR     at request.catch.then (/home/vcap/app/app.js:57:81)
+   2021-01-21T18:31:34.20+1100 [APP/PROC/WEB/0] ERR     at tryCatcher (/home/vcap/app/node_modules/bluebird/js/release/util.js:16:23)
+   2021-01-21T18:31:34.20+1100 [APP/PROC/WEB/0] ERR     at Promise._settlePromiseFromHandler (/home/vcap/app/node_modules/bluebird/js/release/promise.js:547:31)
+   2021-01-21T18:31:34.20+1100 [APP/PROC/WEB/0] ERR     at Promise._settlePromise (/home/vcap/app/node_modules/bluebird/js/release/promise.js:604:18)
+   2021-01-21T18:31:34.20+1100 [APP/PROC/WEB/0] ERR     at Promise._settlePromise0 (/home/vcap/app/node_modules/bluebird/js/release/promise.js:649:10)
+   2021-01-21T18:31:34.20+1100 [APP/PROC/WEB/0] ERR     at Promise._settlePromises (/home/vcap/app/node_modules/bluebird/js/release/promise.js:729:18)
+   2021-01-21T18:31:34.20+1100 [APP/PROC/WEB/0] ERR     at _drainQueueStep (/home/vcap/app/node_modules/bluebird/js/release/async.js:93:12)
+   2021-01-21T18:31:34.20+1100 [APP/PROC/WEB/0] ERR     at _drainQueue (/home/vcap/app/node_modules/bluebird/js/release/async.js:86:9)
+   2021-01-21T18:31:34.20+1100 [APP/PROC/WEB/0] ERR     at Async._drainQueues (/home/vcap/app/node_modules/bluebird/js/release/async.js:102:5)
+   2021-01-21T18:31:34.20+1100 [APP/PROC/WEB/0] ERR     at Immediate.Async.drainQueues [as _onImmediate] (/home/vcap/app/node_modules/bluebird/js/release/async.js:15:14)
+   2021-01-21T18:31:34.20+1100 [APP/PROC/WEB/0] ERR     at runCallback (timers.js:705:18)
+   2021-01-21T18:31:34.20+1100 [APP/PROC/WEB/0] ERR     at tryOnImmediate (timers.js:676:5)
+   2021-01-21T18:31:34.20+1100 [APP/PROC/WEB/0] ERR     at processImmediate (timers.js:658:5)
+   2021-01-21T18:31:34.78+1100 [RTR/5] OUT bsapp.cfapps.ap10.hana.ondemand.com - [2021-01-21T07:31:34.784745858Z] "GET /favicon.ico HTTP/1.1" 404 0 150 "https://bsapp.cfapps.ap10.hana.ondemand.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" "-" "10.0.137.42:61019" x_forwarded_for:"-" x_forwarded_proto:"https" vcap_request_id:"bb533087-d878-4d32-5288-1cb4565d40cb" response_time:0.003405 gorouter_time:0.000110 app_id:"0a18877c-e26f-41eb-999b-496570dc1112" app_index:"0" x_cf_routererror:"-" x_correlationid:"-" tenantid:"-" sap_passport:"-" x_scp_request_id:"e5500945-0ccf-4e0f-aa8a-babee01d7080-60092DD6-153F67" x_cf_app_instance:"-" x_b3_traceid:"33ce79336830ed39" x_b3_spanid:"33ce79336830ed39" x_b3_parentspanid:"-" b3:"33ce79336830ed39-33ce79336830ed39"
+   2021-01-21T18:31:34.78+1100 [RTR/5] OUT 
+   2021-01-21T18:34:08.68+1100 [API/4] OUT Updated app with guid 0a18877c-e26f-41eb-999b-496570dc1112 ({"name"=>"desttest", "command"=>"[PRIVATE DATA HIDDEN]", "memory"=>64, "buildpack"=>"nodejs_buildpack", "environment_json"=>"[PRIVATE DATA HIDDEN]"})
+   2021-01-21T18:34:09.90+1100 [API/1] OUT Updated app with guid 0a18877c-e26f-41eb-999b-496570dc1112 ({"route"=>"c4548c85-b9f5-4173-b6fe-37f16422e685", :verb=>"add", :relation=>"routes", :related_guid=>"c4548c85-b9f5-4173-b6fe-37f16422e685"})
+   2021-01-21T18:34:32.25+1100 [API/1] OUT Uploading bits for app with guid 0a18877c-e26f-41eb-999b-496570dc1112
+   2021-01-21T18:34:40.13+1100 [CELL/0] OUT Cell dd124d4f-c3ed-442c-9053-94ef8465b851 stopping instance 0ffafc7f-236f-4651-4204-307b
+   2021-01-21T18:34:40.14+1100 [API/2] OUT Updated app with guid 0a18877c-e26f-41eb-999b-496570dc1112 ({"state"=>"STOPPED"})
+   2021-01-21T18:34:40.84+1100 [API/1] OUT Creating build for app with guid 0a18877c-e26f-41eb-999b-496570dc1112
+   2021-01-21T18:34:41.10+1100 [API/1] OUT Updated app with guid 0a18877c-e26f-41eb-999b-496570dc1112 ({"state"=>"STARTED"})
+   2021-01-21T18:34:41.14+1100 [STG/0] OUT Downloading nodejs_buildpack...
+   2021-01-21T18:34:41.17+1100 [STG/0] OUT Downloaded nodejs_buildpack
+   2021-01-21T18:34:41.17+1100 [STG/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 creating container for instance eb1b757c-728f-4205-a660-4a09b00fb42e
+   2021-01-21T18:34:41.79+1100 [STG/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 successfully created container for instance eb1b757c-728f-4205-a660-4a09b00fb42e
+   2021-01-21T18:34:42.12+1100 [STG/0] OUT Downloading app package...
+   2021-01-21T18:34:42.12+1100 [STG/0] OUT Downloading build artifacts cache...
+   2021-01-21T18:34:42.18+1100 [STG/0] OUT Downloaded build artifacts cache (225B)
+   2021-01-21T18:34:42.55+1100 [STG/0] OUT Downloaded app package (3.1M)
+   2021-01-21T18:34:42.80+1100 [STG/0] OUT -----> Nodejs Buildpack version 1.7.26
+   2021-01-21T18:34:42.92+1100 [STG/0] OUT -----> Installing binaries
+   2021-01-21T18:34:42.92+1100 [STG/0] OUT        engines.node (package.json): unspecified
+   2021-01-21T18:34:42.92+1100 [STG/0] OUT        engines.npm (package.json): unspecified (use default)
+   2021-01-21T18:34:42.92+1100 [STG/0] OUT        [31;1m**WARNING**[0m Node version not specified in package.json or .nvmrc. See: http://docs.cloudfoundry.org/buildpacks/node/node-tips.html
+   2021-01-21T18:34:42.92+1100 [STG/0] OUT -----> Installing node 10.22.0
+   2021-01-21T18:34:42.92+1100 [STG/0] OUT        Copy [/tmp/buildpacks/2f7ef33ef33b902acb498c1b50a44780/dependencies/e51d3df8fc7149ddd7abb5a679730d69/node_10.22.0_linux_x64_cflinuxfs3_43616969.tgz]
+   2021-01-21T18:34:44.37+1100 [STG/0] OUT        Using default npm version: 6.14.6
+   2021-01-21T18:34:44.37+1100 [STG/0] OUT -----> Installing yarn 1.22.4
+   2021-01-21T18:34:44.37+1100 [STG/0] OUT        Copy [/tmp/buildpacks/2f7ef33ef33b902acb498c1b50a44780/dependencies/d9f0c5147bcb9ee798f041978c157822/yarn-1.22.4-any-stack-24ca2294.tgz]
+   2021-01-21T18:34:44.86+1100 [STG/0] OUT        Installed yarn 1.22.4
+   2021-01-21T18:34:44.86+1100 [STG/0] OUT -----> Creating runtime environment
+   2021-01-21T18:34:44.86+1100 [STG/0] OUT        [34;1mPRO TIP:[0m Warning: package-lock.json not found. The buildpack may reach out to the internet to download module updates, even if they are vendored.
+   2021-01-21T18:34:44.86+1100 [STG/0] OUT        Visit https://docs.cloudfoundry.org/buildpacks/node/index.html#offline_environments
+   2021-01-21T18:34:44.86+1100 [STG/0] OUT        NODE_ENV=production
+   2021-01-21T18:34:44.86+1100 [STG/0] OUT        NODE_HOME=/tmp/contents607480554/deps/0/node
+   2021-01-21T18:34:44.86+1100 [STG/0] OUT        NODE_MODULES_CACHE=true
+   2021-01-21T18:34:44.86+1100 [STG/0] OUT        NODE_VERBOSE=false
+   2021-01-21T18:34:44.86+1100 [STG/0] OUT        NPM_CONFIG_LOGLEVEL=error
+   2021-01-21T18:34:44.86+1100 [STG/0] OUT        NPM_CONFIG_PRODUCTION=true
+   2021-01-21T18:34:44.86+1100 [STG/0] OUT -----> Building dependencies
+   2021-01-21T18:34:44.86+1100 [STG/0] OUT        Prebuild detected (node_modules already exists)
+   2021-01-21T18:34:44.86+1100 [STG/0] OUT        Rebuilding any native modules
+   2021-01-21T18:34:45.43+1100 [APP/PROC/WEB/0] OUT Exit status 143
+   2021-01-21T18:34:45.55+1100 [CELL/0] OUT Cell dd124d4f-c3ed-442c-9053-94ef8465b851 destroying container for instance 0ffafc7f-236f-4651-4204-307b
+   2021-01-21T18:34:45.72+1100 [PROXY/0] OUT Exit status 137
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT cfenv@1.2.3 /tmp/app/node_modules/cfenv
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT js-yaml@3.13.1 /tmp/app/node_modules/js-yaml
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT argparse@1.0.10 /tmp/app/node_modules/argparse
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT sprintf-js@1.0.3 /tmp/app/node_modules/sprintf-js
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT esprima@4.0.1 /tmp/app/node_modules/esprima
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT ports@1.1.0 /tmp/app/node_modules/ports
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT underscore@1.9.2 /tmp/app/node_modules/underscore
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT client-oauth2@4.3.3 /tmp/app/node_modules/client-oauth2
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT popsicle@12.1.0 /tmp/app/node_modules/popsicle
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT popsicle-content-encoding@1.0.0 /tmp/app/node_modules/popsicle-content-encoding
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT popsicle-cookie-jar@1.0.0 /tmp/app/node_modules/popsicle-cookie-jar
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT @types/tough-cookie@2.3.7 /tmp/app/node_modules/@types/tough-cookie
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT tough-cookie@3.0.1 /tmp/app/node_modules/tough-cookie
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT ip-regex@2.1.0 /tmp/app/node_modules/ip-regex
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT psl@1.8.0 /tmp/app/node_modules/psl
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT punycode@2.1.1 /tmp/app/node_modules/punycode
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT popsicle-redirects@1.1.0 /tmp/app/node_modules/popsicle-redirects
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT popsicle-transport-http@1.1.1 /tmp/app/node_modules/popsicle-transport-http
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT cacheable-lookup@5.0.4 /tmp/app/node_modules/cacheable-lookup
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT make-error-cause@2.3.0 /tmp/app/node_modules/make-error-cause
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT make-error@1.3.6 /tmp/app/node_modules/make-error
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT popsicle-transport-xhr@2.0.0 /tmp/app/node_modules/popsicle-transport-xhr
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT popsicle-user-agent@1.0.0 /tmp/app/node_modules/popsicle-user-agent
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT servie@4.3.3 /tmp/app/node_modules/servie
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT @servie/events@1.0.0 /tmp/app/node_modules/@servie/events
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT byte-length@1.0.2 /tmp/app/node_modules/byte-length
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT ts-expect@1.1.0 /tmp/app/node_modules/ts-expect
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT throwback@4.1.0 /tmp/app/node_modules/throwback
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT safe-buffer@5.2.1 /tmp/app/node_modules/safe-buffer
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT express@4.17.1 /tmp/app/node_modules/express
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT accepts@1.3.7 /tmp/app/node_modules/accepts
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT mime-types@2.1.28 /tmp/app/node_modules/mime-types
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT mime-db@1.45.0 /tmp/app/node_modules/mime-db
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT negotiator@0.6.2 /tmp/app/node_modules/negotiator
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT array-flatten@1.1.1 /tmp/app/node_modules/array-flatten
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT body-parser@1.19.0 /tmp/app/node_modules/body-parser
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT bytes@3.1.0 /tmp/app/node_modules/bytes
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT content-type@1.0.4 /tmp/app/node_modules/content-type
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT debug@2.6.9 /tmp/app/node_modules/debug
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT ms@2.0.0 /tmp/app/node_modules/ms
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT depd@1.1.2 /tmp/app/node_modules/depd
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT http-errors@1.7.2 /tmp/app/node_modules/http-errors
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT inherits@2.0.3 /tmp/app/node_modules/inherits
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT setprototypeof@1.1.1 /tmp/app/node_modules/setprototypeof
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT statuses@1.5.0 /tmp/app/node_modules/statuses
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT toidentifier@1.0.0 /tmp/app/node_modules/toidentifier
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT iconv-lite@0.4.24 /tmp/app/node_modules/iconv-lite
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT safer-buffer@2.1.2 /tmp/app/node_modules/safer-buffer
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT on-finished@2.3.0 /tmp/app/node_modules/on-finished
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT ee-first@1.1.1 /tmp/app/node_modules/ee-first
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT qs@6.7.0 /tmp/app/node_modules/qs
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT raw-body@2.4.0 /tmp/app/node_modules/raw-body
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT unpipe@1.0.0 /tmp/app/node_modules/unpipe
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT type-is@1.6.18 /tmp/app/node_modules/type-is
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT media-typer@0.3.0 /tmp/app/node_modules/media-typer
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT content-disposition@0.5.3 /tmp/app/node_modules/content-disposition
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT safe-buffer@5.1.2 /tmp/app/node_modules/content-disposition/node_modules/safe-buffer
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT cookie@0.4.0 /tmp/app/node_modules/cookie
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT cookie-signature@1.0.6 /tmp/app/node_modules/cookie-signature
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT encodeurl@1.0.2 /tmp/app/node_modules/encodeurl
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT escape-html@1.0.3 /tmp/app/node_modules/escape-html
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT etag@1.8.1 /tmp/app/node_modules/etag
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT finalhandler@1.1.2 /tmp/app/node_modules/finalhandler
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT parseurl@1.3.3 /tmp/app/node_modules/parseurl
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT fresh@0.5.2 /tmp/app/node_modules/fresh
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT merge-descriptors@1.0.1 /tmp/app/node_modules/merge-descriptors
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT methods@1.1.2 /tmp/app/node_modules/methods
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT path-to-regexp@0.1.7 /tmp/app/node_modules/path-to-regexp
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT proxy-addr@2.0.6 /tmp/app/node_modules/proxy-addr
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT forwarded@0.1.2 /tmp/app/node_modules/forwarded
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT ipaddr.js@1.9.1 /tmp/app/node_modules/ipaddr.js
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT range-parser@1.2.1 /tmp/app/node_modules/range-parser
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT safe-buffer@5.1.2 /tmp/app/node_modules/express/node_modules/safe-buffer
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT send@0.17.1 /tmp/app/node_modules/send
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT destroy@1.0.4 /tmp/app/node_modules/destroy
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT mime@1.6.0 /tmp/app/node_modules/mime
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT ms@2.1.1 /tmp/app/node_modules/send/node_modules/ms
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT serve-static@1.14.1 /tmp/app/node_modules/serve-static
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT utils-merge@1.0.1 /tmp/app/node_modules/utils-merge
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT vary@1.1.2 /tmp/app/node_modules/vary
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT request@2.88.2 /tmp/app/node_modules/request
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT aws-sign2@0.7.0 /tmp/app/node_modules/aws-sign2
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT aws4@1.11.0 /tmp/app/node_modules/aws4
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT caseless@0.12.0 /tmp/app/node_modules/caseless
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT combined-stream@1.0.8 /tmp/app/node_modules/combined-stream
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT delayed-stream@1.0.0 /tmp/app/node_modules/delayed-stream
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT extend@3.0.2 /tmp/app/node_modules/extend
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT forever-agent@0.6.1 /tmp/app/node_modules/forever-agent
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT form-data@2.3.3 /tmp/app/node_modules/form-data
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT asynckit@0.4.0 /tmp/app/node_modules/asynckit
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT har-validator@5.1.5 /tmp/app/node_modules/har-validator
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT ajv@6.12.6 /tmp/app/node_modules/ajv
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT fast-deep-equal@3.1.3 /tmp/app/node_modules/fast-deep-equal
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT fast-json-stable-stringify@2.1.0 /tmp/app/node_modules/fast-json-stable-stringify
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT json-schema-traverse@0.4.1 /tmp/app/node_modules/json-schema-traverse
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT uri-js@4.4.1 /tmp/app/node_modules/uri-js
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT har-schema@2.0.0 /tmp/app/node_modules/har-schema
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT http-signature@1.2.0 /tmp/app/node_modules/http-signature
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT assert-plus@1.0.0 /tmp/app/node_modules/assert-plus
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT jsprim@1.4.1 /tmp/app/node_modules/jsprim
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT extsprintf@1.3.0 /tmp/app/node_modules/extsprintf
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT json-schema@0.2.3 /tmp/app/node_modules/json-schema
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT verror@1.10.0 /tmp/app/node_modules/verror
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT core-util-is@1.0.2 /tmp/app/node_modules/core-util-is
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT sshpk@1.16.1 /tmp/app/node_modules/sshpk
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT asn1@0.2.4 /tmp/app/node_modules/asn1
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT bcrypt-pbkdf@1.0.2 /tmp/app/node_modules/bcrypt-pbkdf
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT tweetnacl@0.14.5 /tmp/app/node_modules/tweetnacl
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT dashdash@1.14.1 /tmp/app/node_modules/dashdash
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT ecc-jsbn@0.1.2 /tmp/app/node_modules/ecc-jsbn
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT jsbn@0.1.1 /tmp/app/node_modules/jsbn
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT getpass@0.1.7 /tmp/app/node_modules/getpass
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT is-typedarray@1.0.0 /tmp/app/node_modules/is-typedarray
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT isstream@0.1.2 /tmp/app/node_modules/isstream
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT json-stringify-safe@5.0.1 /tmp/app/node_modules/json-stringify-safe
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT oauth-sign@0.9.0 /tmp/app/node_modules/oauth-sign
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT performance-now@2.1.0 /tmp/app/node_modules/performance-now
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT qs@6.5.2 /tmp/app/node_modules/request/node_modules/qs
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT tough-cookie@2.5.0 /tmp/app/node_modules/request/node_modules/tough-cookie
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT tunnel-agent@0.6.0 /tmp/app/node_modules/tunnel-agent
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT uuid@3.4.0 /tmp/app/node_modules/uuid
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT request-promise@4.2.6 /tmp/app/node_modules/request-promise
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT bluebird@3.7.2 /tmp/app/node_modules/bluebird
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT request-promise-core@1.1.4 /tmp/app/node_modules/request-promise-core
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT lodash@4.17.20 /tmp/app/node_modules/lodash
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT stealthy-require@1.1.1 /tmp/app/node_modules/stealthy-require
+   2021-01-21T18:34:45.88+1100 [STG/0] OUT tough-cookie@2.5.0 /tmp/app/node_modules/request-promise/node_modules/tough-cookie
+   2021-01-21T18:34:45.89+1100 [STG/0] OUT        Installing any new modules (package.json)
+   2021-01-21T18:34:46.23+1100 [CELL/0] OUT Cell dd124d4f-c3ed-442c-9053-94ef8465b851 successfully destroyed container for instance 0ffafc7f-236f-4651-4204-307b
+   2021-01-21T18:34:47.04+1100 [STG/0] OUT up to date in 0.619s
+   2021-01-21T18:34:47.09+1100 [STG/0] OUT 2 packages are looking for funding
+   2021-01-21T18:34:47.09+1100 [STG/0] OUT   run `npm fund` for details
+   2021-01-21T18:34:48.12+1100 [STG/0] OUT        Contrast Security no credentials found. Will not write environment files.
+   2021-01-21T18:34:52.70+1100 [STG/0] OUT Exit status 0
+   2021-01-21T18:34:52.70+1100 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2021-01-21T18:34:52.70+1100 [STG/0] OUT Uploading droplet...
+   2021-01-21T18:34:52.70+1100 [STG/0] OUT Uploading build artifacts cache...
+   2021-01-21T18:34:52.75+1100 [STG/0] OUT Uploaded build artifacts cache (223B)
+   2021-01-21T18:34:53.11+1100 [API/7] OUT Creating droplet for app with guid 0a18877c-e26f-41eb-999b-496570dc1112
+   2021-01-21T18:34:55.19+1100 [STG/0] OUT Uploaded droplet (24.6M)
+   2021-01-21T18:34:55.20+1100 [STG/0] OUT Uploading complete
+   2021-01-21T18:34:55.53+1100 [STG/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 stopping instance eb1b757c-728f-4205-a660-4a09b00fb42e
+   2021-01-21T18:34:55.53+1100 [STG/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 destroying container for instance eb1b757c-728f-4205-a660-4a09b00fb42e
+   2021-01-21T18:34:56.00+1100 [CELL/0] OUT Cell b33b8326-56a2-4d2a-b8a9-703fb2250e24 creating container for instance 95a307f4-95a4-4a6f-7f11-93c7
+   2021-01-21T18:34:56.21+1100 [STG/0] OUT Cell 56e4fa9d-b8f5-4031-a4c5-f45557e76fa6 successfully destroyed container for instance eb1b757c-728f-4205-a660-4a09b00fb42e
+   2021-01-21T18:34:56.68+1100 [CELL/0] OUT Cell b33b8326-56a2-4d2a-b8a9-703fb2250e24 successfully created container for instance 95a307f4-95a4-4a6f-7f11-93c7
+   2021-01-21T18:34:57.01+1100 [CELL/0] OUT Downloading droplet...
+   2021-01-21T18:34:58.66+1100 [CELL/0] OUT Downloaded droplet (24.6M)
+   2021-01-21T18:34:58.66+1100 [CELL/0] OUT Starting health monitoring of container
+   2021-01-21T18:35:01.78+1100 [CELL/0] OUT Container became healthy
+   2021-01-21T18:35:28.06+1100 [RTR/2] OUT desttest.cfapps.ap10.hana.ondemand.com - [2021-01-21T07:35:27.754436678Z] "GET / HTTP/1.1" 200 0 169 "https://account.hana.ondemand.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" "-" "10.0.137.18:61003" x_forwarded_for:"-" x_forwarded_proto:"https" vcap_request_id:"bf0ab2f8-15f6-416c-793c-9d6b1d1abc42" response_time:0.311422 gorouter_time:0.000160 app_id:"0a18877c-e26f-41eb-999b-496570dc1112" app_index:"0" x_cf_routererror:"-" x_correlationid:"-" tenantid:"-" sap_passport:"-" x_scp_request_id:"806e3e3f-ba7a-4f3b-9336-dde01f0112ae-60092EBF-14A35E" x_cf_app_instance:"-" x_b3_traceid:"d3282d7335ed51b3" x_b3_spanid:"d3282d7335ed51b3" x_b3_parentspanid:"-" b3:"d3282d7335ed51b3-d3282d7335ed51b3"
+   2021-01-21T18:35:28.06+1100 [RTR/2] OUT 
+   2021-01-21T18:35:28.06+1100 [APP/PROC/WEB/0] ERR Unhandled rejection TypeError: Cannot read property 'body' of undefined
+   2021-01-21T18:35:28.06+1100 [APP/PROC/WEB/0] ERR     at request.catch.then (/home/vcap/app/app.js:57:81)
+   2021-01-21T18:35:28.06+1100 [APP/PROC/WEB/0] ERR     at tryCatcher (/home/vcap/app/node_modules/bluebird/js/release/util.js:16:23)
+   2021-01-21T18:35:28.06+1100 [APP/PROC/WEB/0] ERR     at Promise._settlePromiseFromHandler (/home/vcap/app/node_modules/bluebird/js/release/promise.js:547:31)
+   2021-01-21T18:35:28.06+1100 [APP/PROC/WEB/0] ERR     at Promise._settlePromise (/home/vcap/app/node_modules/bluebird/js/release/promise.js:604:18)
+   2021-01-21T18:35:28.06+1100 [APP/PROC/WEB/0] ERR     at Promise._settlePromise0 (/home/vcap/app/node_modules/bluebird/js/release/promise.js:649:10)
+   2021-01-21T18:35:28.06+1100 [APP/PROC/WEB/0] ERR     at Promise._settlePromises (/home/vcap/app/node_modules/bluebird/js/release/promise.js:729:18)
+   2021-01-21T18:35:28.06+1100 [APP/PROC/WEB/0] ERR     at _drainQueueStep (/home/vcap/app/node_modules/bluebird/js/release/async.js:93:12)
+   2021-01-21T18:35:28.06+1100 [APP/PROC/WEB/0] ERR     at _drainQueue (/home/vcap/app/node_modules/bluebird/js/release/async.js:86:9)
+   2021-01-21T18:35:28.06+1100 [APP/PROC/WEB/0] ERR     at Async._drainQueues (/home/vcap/app/node_modules/bluebird/js/release/async.js:102:5)
+   2021-01-21T18:35:28.06+1100 [APP/PROC/WEB/0] ERR     at Immediate.Async.drainQueues [as _onImmediate] (/home/vcap/app/node_modules/bluebird/js/release/async.js:15:14)
+   2021-01-21T18:35:28.06+1100 [APP/PROC/WEB/0] ERR     at runCallback (timers.js:705:18)
+   2021-01-21T18:35:28.06+1100 [APP/PROC/WEB/0] ERR     at tryOnImmediate (timers.js:676:5)
+   2021-01-21T18:35:28.06+1100 [APP/PROC/WEB/0] ERR     at processImmediate (timers.js:658:5)
+   2021-01-21T18:35:28.50+1100 [RTR/2] OUT desttest.cfapps.ap10.hana.ondemand.com - [2021-01-21T07:35:28.498625157Z] "GET /favicon.ico HTTP/1.1" 404 0 150 "https://desttest.cfapps.ap10.hana.ondemand.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" "-" "10.0.137.18:61003" x_forwarded_for:"-" x_forwarded_proto:"https" vcap_request_id:"5feb560e-7e11-45dd-6052-3ff1100f8429" response_time:0.004108 gorouter_time:0.000110 app_id:"0a18877c-e26f-41eb-999b-496570dc1112" app_index:"0" x_cf_routererror:"-" x_correlationid:"-" tenantid:"-" sap_passport:"-" x_scp_request_id:"806e3e3f-ba7a-4f3b-9336-dde01f0112ae-60092EC0-14A3F4" x_cf_app_instance:"-" x_b3_traceid:"730716fbbb37793a" x_b3_spanid:"730716fbbb37793a" x_b3_parentspanid:"-" b3:"730716fbbb37793a-730716fbbb37793a"
+   2021-01-21T18:35:28.50+1100 [RTR/2] OUT 
